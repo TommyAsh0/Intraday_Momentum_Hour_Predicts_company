@@ -1,0 +1,1438 @@
+
+===== PAGE 1 =====
+Munich Personal RePEc Archive
+Overnight Momentum, Informational
+Shocks, and Late-Informed Trading in
+China
+Gao, Ya and Han, Xing and Li, Youwei and Xiong, Xiong
+Faculty of Management and Economics, Dalian University of
+Technology, Dalian, 116024, China, Department of Accountancy and
+Finance, University of Otago, Dunedin, 9016, New Zealand, Hull
+University Business School, University of Hull, HU6 7RX, United
+Kingdom, College of Management and Economics, Tianjin
+University, Tianjin 300072, China
+16 September 2019
+Online at https://mpra.ub.uni-muenchen.de/96784/
+MPRA Paper No. 96784, posted 05 Nov 2019 17:03 UTC
+===== PAGE 2 =====
+0 
+  
+Overnight Momentum , Informational Shocks, and Late-Informed 
+Trading in China 
+ 
+Ya Gao1, Xing Han2, Youwei Li3, Xiong Xiong4,5* 
+ 
+1. Faculty of Management and Economics, Dalian University of Technology, Dalian, 116024,  China    
+2. Department of Accountancy and Finance, University of Otago, Dunedin, 9016, New Zealand 
+3. Hull University Business School, University of Hull, HU6 7RX, United Kingdom 
+4. College of Management and Economics, Tianjin University, Tianjin 300072, China 
+5. China Center for Social Computing and Analytics, Tianjin, 300072, China 
+ 
+First version: 30-December 2017  This version: 16-September-2019 
+Abstract 
+Based on high-frequency firm-level data, this paper uncovers new empirical patterns on 
+intraday momentum in China. First, there exists a strong intraday momentum effect at the firm 
+level. Second, the intraday predictability stems mainly from the overnight component rather 
+than the opening half-hour component, which is consistent with the microstructure features of 
+the Chinese market. Third, the intraday predictability attenuates (strengthens) following large 
+positive (negative) informational shocks, implying a striking asymmetric reaction by market 
+participants. Finally, we document that late-informed traders are relatively less experienced or 
+skilful. Overall, the empirical results lend support to the model of late-informed trading. 
+ 
+JEL classification: G12, G14, G15, G17 
+Keywords: intraday momentum, overnight return, price jump, late-informed trading 
+ 
+ 
+ 
+* Corresponding author: College of Management and Economics, Tianjin University, No . 92 Weijin Road, Nankai 
+District, Tianjin 300072, China. Tel: + 86-022-27891308, Fax: + 86-022-27891308, Email: xxpeter@tju.edu.cn  (X. 
+Xiong). Email addresses: gaoya@dlut.edu.cn  (Y. Gao); xing.han@otago.ac.nz  (X. Han); youwei.li@hull.ac.uk  
+(Y.Li); xxpeter@tju.edu.cn  (X. Xiong).  
+The authors acknowledge Brian Lucey, Yingying Wu (the discussant), and seminar participants at INFINITI 
+(Sydney). Financial support from the National Natural Science Foundation of China (71 532009, 71790594, 
+71571197), and the Tianjin Development Program for Innovation and Entre preneurship, is greatly acknowledged. 
+All remaining errors are the authors’.  
+===== PAGE 3 =====
+0 
+  
+Overnight Momentum , Informational Shocks, and Late-Informed 
+Trading in China 
+ 
+Abstract 
+Based on high-frequency firm-level data, this paper uncovers new empirical patterns on 
+intraday momentum in China. First, there exists a strong intraday momentum effect at the firm 
+level. Second, the intraday predictability stems mainly from the overnight component rather 
+than the opening half-hour component, which is consistent with the microstructure features of 
+the Chinese market. Third, the intraday predictability attenuates (strengthens) following large 
+positive (negative) informational shocks, implying a striking asymmetric reaction by market 
+participants. Finally, we document that late-informed traders are relatively less experienced or 
+skilful. Overall, the empirical results lend support to the model of the late-informed trading. 
+ 
+JEL classification: G12, G14, G15, G17 
+Keywords: intraday momentum, overnight return, price jump, late-informed trading 
+ 
+ 
+ 
+===== PAGE 4 =====
+1 
+ 1. Introduction 
+Since the seminal work in Jegadeesh and Titman (1993) , the tendency that stocks perform 
+relatively well in the past continue to outperform in the intermediate horizon, the so called 
+(cross-sectional) momentum, has drawn substantial interests from academia and practitioners 
+alike ( Carhart 1997 ; Cooper  et al.  2004 ; Nijman  et al.  2004 ; Sagi & Seasholes 2007 ; Min & 
+Kim 2016 ).2 Besides th is well-established cross-sectional momentum, Moskowitz  et al.  (2012)  
+document a strong time-series momentum pattern that the past 12-month return predicts the 
+subsequent one-month return, which prevails in a number of asset classes ( Moskowitz  et al.  
+2012 ; Georgopoulou & Wang 2016 ).  
+More recently, Gao et al.  (2018)  extend the momentum literature to the field of intraday high-
+frequency and uncover a striking intraday time-series predictability in the US S&P 500 
+exchange-traded fund market. That is, the first half-hour return positively predicts the last half-
+hour return within the same trading day.3 They argue that the intraday momentum is consistent 
+with both the ( Bogousslavsky 2016 ) model of infrequent portfolio rebalancing and the model 
+of late-informed trading near the market close. 
+To shed new light on the intraday momentum effect, this paper extends the empirical analysis 
+to the firm level by examining a comprehensive high-frequency dataset in the Chinese A-share 
+market. Our focus on the Chinese stock market is mainly motivated by its special trading 
+regulation and market designs. To be specific, China has adopt ed a “𝑇 + 1  trading rule ” since 
+1995, which prevents investors from selling stocks bought on the same day ( Guo et al.  2012 ). 
+This unique trading rule, however, goes counter to the settings of the infrequent portfolio 
+rebalancing model, as traders who hold an excess position in the asset could not rebalance at 
+the intraday frequency.4 In other words, the 𝑇 + 1  trading rule offers an ideal setting to verify 
+the rich empirical predictions of the Gao et al. (2018)  model of late-informed trading.  
+ 
+2 The strong cross-sectional momentum pattern prevails in the international equity markets . For example, 
+Rouwenhorst (1998)  examined 18 European stock markets, Fama and French (2012)  covered 23 developed 
+markets in North America, Europe, and Asia-Pacific, Asness  et al.  (2013)  provided confirmatory evidence in the 
+US, UK, Japan, and the EU market, and Barroso and Santa-Clara (2015)  covered 21 stock markets. Cross-sectional 
+momentum also exists in different asset classes. See Moskowitz  et al.  (2012) , Menkhoff  et al.  (2012)  and Asness  
+et al.  (2013)  for evidences in the equities, currencies, government bonds, and commodity futures markets.  
+3 Elaut  et al.  (2018)  and Zhang  et al.  (2019)  document similar intraday momentum effect in the FX and emerging 
+markets, respectively.   
+4 The Bogousslavsky (2016)  model of infrequent portfolio rebalancing assumes that a subset of infreque nt traders 
+rebalances at the designated frequency to generate the observed positive return predictab ility While it is a powerful 
+theoretical model which could explain the return predictability at daily, weekly, and other frequencies, it is less 
+plausible to explain the intraday pattern in China. This is because China adopts a  unique “ 𝑇 + 1  trading rule ” 
+which technically forbids investors from rebalancing at the intraday frequency .  
+===== PAGE 5 =====
+2 
+ Along the line of the high-frequency return predictability ( Heston  et al.  2010 ; Elaut  et al.  2018 ; 
+Gao et al.  2018 ), our contribution to the emerging high-frequency momentum literature is at 
+least threefold.  
+First, in contrast to the prior work that focuses on the market level ( Gao et al.  2018 ; Zhang  et 
+al. 2019 ), we analyse whether the intraday time-series predictability exists for individual stocks. 
+Similar to findings at the aggregated level, we document a strong intraday time-series 
+momentum pattern at the firm level: stock return of the first half-hour is a strong positive 
+predictor for the last half-hour return at the market closure. Moreover, this firm-level return 
+predictability is robust across subsamples that differ in market capitalization (and other firm 
+characteristics), implying an intraday time- series trading strategy is implementable for 
+individual stocks as well.  
+Second, we uncover the (empirical) source of the intraday return predictability by decomposing 
+the Gao et al.  (2018)  first half-hour return into two non-overlapping return components: the 
+overnight component and the opening half-hour component. Motivated by the microstructure 
+design of the Chinese stock market, in which a pre-open call auction is integrated with the 
+continuous trading session(s), we explore its implications for intraday momentum. In principle, 
+the pre-open call auction should facilitate price discovery as it provides more rooms for trading 
+beyond normal trading sessions ( Madhavan 1992 ). This is crucial for a market with 
+heterogeneous investors, as those early- informed traders could act on the “overnight” 
+informational flows in pre-open call auction before the continuous trading session starts.  
+To the extent that overnight return (determined by the pre-open call market) carries significant 
+price-related information, we would expect that the overnight return component positively 
+predicts the price movement in the last half-hour before market closure. This is also consistent 
+with the prediction of the model of late-informed trading as late-informed traders base their 
+intraday trading signal on the observed overnight return that are informative. Empirically, we 
+find consistent evidence: Both the panel regression and firm-by-firm regressions yield the same 
+conclusion that the intraday momentum stems mainly from the overnight return component. In 
+comparison, the opening half-hour return provides little, if any, predictability for the last half-
+hour return during the trading day. From a practical perspective, the strong er predictive power 
+of overnight return is also beneficial to all market participants , as they have more time to 
+execute the intraday trading strategy throughout the day.  
+===== PAGE 6 =====
+3 
+ Third, we explore the interaction between firm-level informational shocks and the intraday 
+momentum. As another key finding of th is paper, we document a striking asymmetric pattern 
+of intraday (overnight) momentum subsequent to large informational shocks. Using identified 
+price jumps as the proxy for large informational shocks (see Ball and Torous (1985) , Johannes 
+(2004) , Maheu and McCurdy (2004) , and Cremers  et al.  (2015)  for theoretical justification), 
+we find the return predictability of first half-hour return or overnight return is much stronger 
+following negative jump days than positive jump days. Th is striking asymmetric post-jump 
+momentum pattern is similar to the prior (cross-sectional) momentum literature that investors 
+react differently to good news and bad news ( Hong  et al.  2000 ), and can be reconciled with a 
+number of real world mechanisms (or frictions) such as biased managerial disclosure of good 
+news versus bad news of a firm and the existence of stringent short-sales impediments. 
+Therefore, bad news travels slowly as it takes longer time for the market to digest the 
+informational content of pessimist news. ( Pritamani & Singal 2001 ; Park & Lee 2014 ; Brennan  
+et al.  2015 ).  
+Finally, based on a proprietary brokerage account dataset, we make the first attempt to verify 
+the model predictions of the late-informed trading. Given that investors are heterogeneous in 
+their ability to collect and interpret information, the key empirical prediction of the late-
+informed trading is that those who trade at later time of the day ( i.e., late-informed traders) are 
+relatively less experienced or skilful compared to those who trade mainly in the pre-open call 
+auction and/or the early trading session. Empirically, we find confirmatory evidence that there 
+exists a substantial fraction of late-informed traders ( i.e., approximately 15% of all active 
+traders) who concentrated their trading activity in the latt er-half of the trading day, and in 
+particular, the last half-hour of the continuous trading session. In comparison, early-informed 
+traders, defined as those traded during the pre-open call auction, comprises around 6.5% of all 
+active traders. In general, we find early-informed traders have more trading experience 
+(measured in years) and are better educated ( i.e., bachelor degree or higher) than their late-
+informed peers (See Table 8  and Table A4  in the appendix). Therefore, for late-informed 
+traders who have less ability to process the overnight information (or hesitate to trade until they 
+confirm the precision of the overnight information), the trading session near market close ( i.e., 
+the last half-hour) stands for an important timing for them to utilize their (late-learned) 
+information to trade. 
+In robustness tests and further analysis, we find similar evidence as in prior literature that 
+intraday momentum pattern is much stronger in financial crisis than in normal periods 
+===== PAGE 7 =====
+4 
+ (Avramov & Hore 2017 ; Elaut  et al.  2018 ; Gao et al.  2018 ). The magnitude of the slope 
+coefficient on the first half-hour return or overnight return almost tripled during market crashes, 
+indicating stronger return comovements in bad times.   
+The remainder of this paper is organized as follows: Section 2 documents the data sources and 
+the trading mechanisms in China. Section 3 provides the baseline results of intraday momentum 
+in the Chinese stock market for the full sample and the subsamples. Section 4 provides an 
+empirical decomposition to validate the sources of the intraday momentum. Section 5 further 
+tests the post-jump-day effect of intraday momentum. Section 6 validates the model predictions 
+of the late-informed trading. Section 7 performs a battery of robustness tests and further 
+analyses. Section 8 concludes the paper. 
+ 
+2. Data and Trade Mechanisms 
+2.1. Data Sources 
+We compile a high-frequency dataset of the Chinese A-shares over the sample period from 
+January 1996 to May 2018. Our data source is from the Thomson Reuters Tick History (TRTH) 
+database via the Securities Industry Research Centre of Asia-Pacific (SIRCA). For 
+comprehensiveness, we retrieve all Chinese A-shares available in the TRTH database, which 
+includes 3,596 stocks. We apply a uniform data filtering rule. That is, we require a stock to 
+have at least a full year’s data (corresponding to 244 trading days, the average annual trading 
+days over the entire sample period) to be included in our final sample. After applying this filter 
+rule, our final sample contains 3,224 valid stocks in total. This includes 1,271 stocks listed in 
+the Shanghai Stock Exchange (SHSE), which spans from January 1996 to May 2018; 467 
+stocks in the main board of the Shenzhen Stock Exchange (SZSE), which spans from 
+November 2001 to May 2018; 852 stocks in the SME board of SZSE, which spans from June 
+2004 to May 2018; 634 stocks in the ChiNext board of SZSE, which spans from November 
+2009 to May 2018.  
+Note China has very rigid rules for stocks to be listed on the different boards of the security 
+exchanges, which is mainly based on firm size. According to the listing rule, all A-shares in 
+the Shanghai Stock Exchange are on the Main board. The same applies to all stocks on the 
+Main board of SZSE. In general, stocks on the Main board need to have at least 30 million 
+shares and more than 50 million Chinese yuan (CNY) share capital before IPO, and more than 
+25% tradable shares after being listed; stocks on the SME board need to have at least 30 million 
+===== PAGE 8 =====
+5 
+ shares before the IPO, more than 50 million CNY share capital after being listed; stocks on the 
+ChiNext board need to have more than 30 million CNY share capital after being listed. 
+Following Gao et al.  (2018) , we calculate the intraday return at each half-hour interval for our 
+empirical analysis in the following section. The full description of the variable construction is 
+available in Appendix A.1 .  
+ 
+2.2. Trade Mechanism 
+Since its inception in 1990, the Chinese A-share market functions as a pure order-driven market . 
+SHSE and SZSE adopt a fully automated and screen-based trading platform ( i.e., an electronic 
+open Limit Order Book (LOB)) to consolidate all the trades and quotes during the trading hours , 
+with no designated market makers (specialists).  
+Besides the continuously trading system ( i.e., LOB), the trading mechanism in the Chinese A-
+share market is integrated with a 10-minute pre-open call auction held between 9:15 and 9:25 
+(Gerace  et al.  2015 ).5 The pre-open call auction is designed to help uncover the opening price, 
+which is the clearing price that maximizes the trading volume based on all the collected limit 
+orders during the pre-open session. Orders that are not executed in the pre-open call auction 
+are automatically transferred to the period of continuous trading.  
+Following the pre-open call auction, there are two normal trading sessions, during which 
+continuous trading is conducted through the submission of limit or market orders. During the 
+continuous trading sessions, (unexecuted) limit orders can be modified or cancelled. The 
+morning trading session starts at 9:30 for two consecutive hours, and then stops at 11:30 for a 
+90-minute lunch break. The afternoon trading session resumes at 13:00. There is no special 
+trading mechanism to close the morning session or open the afternoon session. In SHSE, the 
+afternoon session lasts for another two consecutive hours and closes at 15:00 for that day. 
+Accordingly, the closing price in SHSE is generated by taking a volume-weighted average of 
+the trading prices of the final minute of the afternoon session. In SZSE, however, the afternoon 
+session stops at 14:57, which is followed by a 3-minute closing call auction between 14:57 and 
+15:00 to determine the closing price of the day.6 
+ 
+5 During the 10-minute pre-open call auction, investors could place limit ord ers. However, no orders c an be 
+modified or withdrawn between 9:20 and 9:25. 
+6 The transition from continuous trading to the closing call auction is almost “unnoticeable”, as all remaining limit 
+orders at 14:57 are routed automatically to the closing auction. In addition, investors could submit new limit orders 
+ 
+===== PAGE 9 =====
+6 
+  
+3. Intraday Momentum at the Firm Level 
+3.1. Baseline Results 
+In this section, we test whether the intraday momentum pattern exists at the firm level. That is, 
+whether the first half-hour return (denoted as 𝑟1𝑠𝑡,𝑡) is able to predict the last half-hour return 
+of the trading day 𝑡 for an individual stock.  
+Following Gao et al.  (2018) , we consider the following predictive regression model:  
+𝑟𝑙𝑎𝑠𝑡,𝑡 = 𝛼 + 𝛽 1𝑠𝑡× 𝑟 1𝑠𝑡,𝑡+ 𝛽 14:30× 𝑟 14:30,𝑡+𝐹𝐸+ 𝜀 𝑡, [3.1] 
+where 𝑟1𝑠𝑡,𝑡 is the first half-hour return calculated using the close price of the prior trading day 
+and the stock price at 10:00 of the current trading day, 𝑟14:30,𝑡 is the penultimate half-hour 
+return calculated using the stock prices at 14:00 and 14:30 of the current trading day. The 
+dependent variable 𝑟𝑙𝑎𝑠𝑡,𝑡  is the last half-hour return, which is calculated from the stock prices 
+at 14:30 and 15:00 ( i.e., market close) of the current trading day. 𝐹𝐸 denote the terms for the 
+firm-fixed effects and time-fixed effects. The inclusion of the penultimate half-hour return is 
+to control the very short-term return predictability ( i.e., autocorrelation) at the intraday level. 
+Therefore, the slope coefficients, 𝛽1𝑠𝑡 and 𝛽14:30, measure the predictability of the first half-
+hour return and the penultimate half-hour return on the last half-hour return, respectively.  
+[ insert table 1 here ] 
+Table 1  presents the estimation results of the panel regression with fixed effects. The first 
+model specification (column 1) represents the univariate case with the first half-hour return as 
+the predictive variable. As it stands, the slope coefficient on the first half-hour return amounts 
+to 1.92 and is statistically significant at the 1% level.7 The second model specification (column 
+2) represents the univariate case with the penultimate half-hour return as the predictive variable. 
+Its slope coefficient amounts to 6.16 and is also highly statistically significant at the 1% level. 
+The third model specification (column 3) represents the bivariate case with both the first half-
+hour return and the penultimate half-hour return as the predictive variables. It should be noted 
+ 
+during the 3-minute closing auction. After submission, these orders can  no longer be modified or withdrawn 
+during the closing auction period.   
+7 To be conservative, we do not annualize the slope coefficients in our pred ictive regressions. Therefore, our slope 
+coefficients are in general smaller than those in Gao et al.  (2018) . In fact, a one percent change of the first half-
+hour return would indicate an annualized  4.68 percent change of the last half-hour return, which is significant 
+from a pure economics perspective.  
+ 
+===== PAGE 10 =====
+7 
+ after accounting for the very short-term return predictability ( i.e., penultimate half-hour return), 
+the predictive power of the first half-hour return on the last half-hour return remains strong 
+with a coefficient of 1.83, which is significant at the 1% level.  
+In terms of the model fit, the adjusted R-squares are 0.16%, 0.37%, and 0.51% for the three 
+model specifications, respectively.8 This is consistent with the prior findings in Zhang  et al.  
+(2019)  that the penultimate half-hour return has stronger return predictability than the first half-
+hour return in China, which is contra ry to the pattern in the US ( Gao et al.  2018 ). In fact, both 
+return predictors remain strong in predicting the last half-hour return, as the adjusted R-square 
+increased from 0.37% to 0.51% in the bivariate case. This, coupled with the significant 
+coefficient of the first half-hour return, implies that the information content of the first half-
+hour return is not subsumed by the penultimate half-hour return.9  
+To sum up, intraday momentum effect remains strong at the firm level in the Chinese stock 
+market: The first half-hour return strongly predicts the last half-hour return for individual 
+stocks. 
+ 
+3.2. Subsample Analysis 
+Results in the prior subsection confirms the strong intraday time-series momentum effect at the 
+firm level in the Chinese A-share market. In this part, we re-test the intraday time-series pattern 
+with subsamples. This is motivated by the empirical findings in Hong  et al.  (2000)  that the 
+profitability of momentum strategies declines sharply with firm size, as the smallest stocks are 
+influenced the most by return momentum. Our aim is to verify whether the same pattern holds 
+at the intraday frequency.  
+Following the listing rules in the Chinese A-share market, we assign stocks to three different 
+groups based on their board of listing: The Main board refers to all stocks listed in the Shanghai 
+Stock Exchange and those in the main board of the Shenzhen Stock Exchange. The SME board 
+ 
+8 The model fit is reasonable considering that the predictive regressions usually h ave relatively low 𝑅2 at the high 
+frequency. For example, Yamamoto (2012)  adopts the intraday technical analysis of individual stocks on the 
+Tokyo Stock Exchange and finds the joint regression explanatory power of lagged  midpoint return, order flow, 
+and order imbalance ranges from 0.21% to 0.50% for different size groups . Renault (2017)  uses intraday online 
+sentiment data to predict the half hour return  in the U.S. stock market  and find the regression explanatory power 
+for the first half-hour return, twelfth half-hour return, and the last half- hour return varies from -0.14% to 1.35%. 
+9 In unreported analysis, we also control for the first half-hour return after the lunch break. The intraday 
+momentum effect remains robust. For parsimonious purpose, we retain in o ur baseline model only the first half-
+hour and the penultimate half-hour returns. We thank an anonymous r eferee for suggesting this additional 
+robustness check.  
+===== PAGE 11 =====
+8 
+ consists of all A-shares that fulfill the criteria of small and medium enterprises. The ChiNext 
+board consists of all A-shares identified as small/tiny enterprises engaged in independent 
+innovations and/or other growing venture enterprises. The existence of the three alternative 
+boards reflects China’s multi -tier capital market system and offers a simple yet rigid 
+classification of the firm size (see footnote 9 ). Admittedly, an alternative size-based 
+classification would be to divide all listed firms into size-tercile groups based on the market 
+value of equity as in Han and Li (2017) . In fact, our findings remain unchanged under the 
+alternative size classification method.  
+Table A1.  in the appendix  provides the market statistics of the three boards of the Chinese A-
+share market. A number of salient features emerge from the table. First, from the time 
+dimension there exhibits strong growth for all the three boards, as reflected in the number of 
+listed firms, total market capitalization, total number of shares outstanding, and total trading 
+volume. Second, there exhibits a size pattern, as stocks in the Main board ha ve the largest (total) 
+market capitalization, number of shares outstanding, and trading volume, which is followed by 
+the SME board and the ChiNext board. This provides support for us to sort stocks into size 
+groups based on their board of listing. Third, there exhibits two dramatic market downturns 
+(i.e., financial crises) as in the year of 2008 and 2016 during our sample period, which we 
+examine in more detail in Section 7 .  
+To uncover the intraday momentum pattern in the cross section, we re-test the predictive 
+regression with the subsamples.  
+[ insert table 2 here ] 
+Table 2  presents the estimation results of the panel regression of the three subsamples with 
+fixed effects ( i.e., equation [3.1]). Looking across the three groups, there exhibits a size pattern, 
+as the slope coefficient on the first half-hour return increases monotonically from the Main 
+board to the SME board and to the ChiNext board, whether we control for the effect of the 
+penultimate half-hour return or not. In addition, the explanatory power also increases 
+monotonically from the Main board to the SME board and to the ChiNext board (0.12%, 0.24% 
+and 0.31% in the univariate case). When examining the autocorrelation effect due to the 
+penultimate half-hour return, we find a similar monotonically increasing pattern for the slope 
+coefficient and the explanatory power.  
+Overall, we confirm that intraday time-series momentum exists in all three subgroups, and the 
+penultimate half-hour return remains a strong return predictor as compared to the first half-
+===== PAGE 12 =====
+9 
+ hour return. Moreover, we more or less confirm the size effect of the intraday time-series 
+momentum in the cross section, as the return predictability in the SME and ChiNext boards are 
+stronger than that in the Main board. In other words, stocks with smaller market capitalization 
+exhibit larger intraday momentum pattern over time, which is consistent with prior literature 
+such as Rouwenhorst (1998) , Hong  et al.  (2000) , Chui  et al.  (2010) , and Novy-Marx (2012) , 
+among others that studying momentum at the low frequency ( i.e., monthly).  
+ 
+4. Decomposition of the First Half-Hour Return  
+4.1. Overnight Momentum versus Opening Half-hour Momentum 
+In this section, we decompose the Gao et al.  (2018)  first half-hour return into two non-
+overlapping components: the overnight return component and the opening half-hour return 
+component. The former is defined as the price movement from the closing price of the prior 
+trading day to the opening price as of 9:30, while the latter measures the intraday price 
+movement between 9:30 and 10:00 of the current day. The partition into the two non-
+overlapping components is mainly motivated for two reasons.  
+First, from a pure market microstructure perspective, the two return components stem from 
+vastly different trading mechanisms. As is explained in Subsection 2.2 , the overnight 
+component (or opening price) is determined by the 10-minute pre-open call auction, which 
+offers the earliest  trading opportunities (beyond the normal trading hours) to explore the 
+informational flows during the overnight period ( i.e., in between the market closure of the prior 
+trading day and the opening of the continuous trading in the current trading day). In principle, 
+call markets can aggregate information by pooling orders and thus facilitate price discovery 
+even when continuous markets may fail due to high information asymmetry ( Madhavan 1992 ). 
+The (Walrasian-type) call auction matches supply and demand ( i.e., limit buy and sell orders) 
+directly by setting a uniform clearing price ( i.e., the opening price) to maximize the transaction 
+volume. Thus, it is claimed to facilitate price discovery by lowering execution and market 
+impact costs, eliminating the risk of front-running and informational disclosure, and lowering 
+price manipulation ( Economides & Schwartz 1995 ). In comparison, the opening half-hour 
+return is determined in the continuous trading sessions ( i.e., the LOB), in which 
+(early-)informed traders tend to “disguise” their trading motive.  Moreover, trading in the 
+continuous session could also be related to other motives such as liquidity provision ( i.e., 
+earning the bid-ask spread). In other words, the opening half-hour component could be more 
+===== PAGE 13 =====
+10 
+ of a mixed  price signal. Therefore, it is natural to assume that the two non-overlapping 
+components offer different price-related information, which might lead to the documented 
+intraday periodicity. 
+Second, from the perspective of the model of late-informed trading, it helps to identify which 
+trading signal do the late-informed traders act upon. Within the model of late-informed trading, 
+investors are heterogeneous in their ability to collect and interpret information. Those who have 
+better skills to process the overnight information ( i.e., early-informed traders) can act early in 
+the morning trading session and even the pre-open call auction. However, for those who have 
+less ability to process the overnight information or those who hesitate to trade until they 
+confirm the precision of the overnight information, the last half-hour trading period stands for 
+another important timing for them to utilize their (late-learned) information to trade, and thus 
+exploiting the informational content. Therefore, it helps to identify which return component is 
+the (major) trading signal utilized by the late-informed traders.  
+To test (separately) the predictive power of the overnight component and the opening half-hour 
+component, we adopt the following predictive regression model.  
+𝑟𝑙𝑎𝑠𝑡,𝑡 = 𝛼 + 𝛽 𝑜𝑣× 𝑟 𝑜𝑣,𝑡+ 𝛽 10:00× 𝑟 10:00,𝑡+ 𝛽 14:30× 𝑟 14:30,𝑡+𝐹𝐸+𝜀 𝑡 [4.1] 
+where 𝑟𝑜𝑣,𝑡 denotes the overnight component calculates from the closing price of the prior 
+trading day to the opening price of the current day, while 𝑟10:00,𝑡 the opening half-hour 
+component calculated from the stock prices at 9:30 and 10:00 of the current day. The 
+penultimate half-hour return, 𝑟14:30,𝑡, is calculated from the stock prices at 14:00 and 14:30 of 
+the current trading day. The dependent variable, 𝑟𝑙𝑎𝑠𝑡,𝑡 , is the last half-hour return within the 
+day, calculated from the stock prices at 14:30 and 15:00. 𝐹𝐸 denotes the terms of fixed effects . 
+Again, we require a firm to have at least one full year’s available data ( i.e., 244 trading days, 
+the average annual trading days in China) to be included in the panel regression. The slope 
+coefficients 𝛽𝑜𝑣 and 𝛽10:00 measure the predictability of the two non-overlapping return 
+components on the last half-hour return, respectively. 
+[ insert table 3 here ] 
+Table 3  presents the estimation results of the panel regression with fixed effects. The first 
+model specification (column 1) represents the univariate predictive regression with the 
+overnight return as the sole predictive variable. Compared to the univariate case of the first 
+half-hour return in column 1 of table 1 , the impact of the overnight return component is much 
+===== PAGE 14 =====
+11 
+ stronger, both in the magnitude of the slope coefficient (from 1.92 to 2.88) and in terms of the 
+explanatory power (from 0.16% to 0.22%). After controlling the overnight component, the 
+opening half-hour component exhibits some positive predictability on the last half-hour return 
+(column 2). However, its influence is much weak er as its slope coefficient is approximately 
+one-fifth of that of the overnight component. Moreover, adding the opening half-hour 
+component only slightly increases the explanatory power from 0.22% to 0.23%. Column 3 
+takes into account the impact of the penultimate half-hour return when testing the predictive 
+power of the overnight return component. The impact of the overnight component remains 
+virtually intact with a slope coefficient of 2.78 that is statistically significant at the 1% level. 
+Moreover, there exhibits strong short-term return predictability induced by the penultimate 
+half-hour return, as its slope coefficient is 6.02, much larger in magnitude than the overnight 
+component. The model fit also jumps dramatically from 0.22% to 0.57%. Finally, the last 
+column considers simultaneously the overnight component, the opening ha lf-hour component, 
+and the penultimate half-hour return. The results are highly similar, as we document a strong 
+short-term predictability (due to the penultimate half-hour return) and intraday momentum due 
+to the overnight component.  
+ 
+4.2. Alternative Versions of the Opening Half-hour Return 
+To shed more light on the empirical source(s) of intraday momentum, we also test alternative 
+versions of the opening half-hour return. That is, we define alternative versions of opening 
+half-hour return using the price movements during the first 5, 10, 15, 20, 25, and 30 minutes in 
+the continuous trading session, respectively. Gao et al.  (2018)  also test similar alternative 
+definitions of first half-hour return for intraday momentum, but they do not separate the 
+overnight component from these alternative measures.  
+Again, our aim is to tes t the predictive power of the overnight component and the alternative 
+opening half-hour component, while controlling the short-term autocorrelation ( i.e., the 
+penultimate half-hour return).  
+[ insert table 4 here ] 
+Table 4  presents the estimation results of the panel regression with fixed effects. Interestingly, 
+as we retain the same model specification but use alternative versions of the opening half-hour 
+component, the slope coefficient on the (alternative) opening half-hour component flips sign 
+from negative to positive. The changing sign of the slope coefficients is consistent with the fact 
+===== PAGE 15 =====
+12 
+ that trading in the continuous session is related to different motives such as information 
+digestion and/or liquidity provision, which results in a mixed  price signal for the last half-hour 
+return.  
+In comparison, the slope coefficients on the overnight component and the penultimate half-
+hour return retain the same positive sign and magnitude, implying non-overlapping price-
+related information for the last half-hour return.  
+Overall, when we interpret the results from Tables 3  and 4 collectively, it is clear that the 
+overnight return (determined from the pre-open call auction) is the main source of the intraday 
+momentum effect. In fact, after controlling the penultimate half-hour return, the overnight 
+return has a larger slope coefficient than that of the first-half hour return (in Table 1 ). This is 
+consistent with the projection from the microstructure perspective that trading in the pre-open 
+call market is more likely to be informational driven, which results in a more reliable price 
+signal with stronger predictive power. From the perspective of the model of late-informed 
+trading, it also implies that the overnight component is (possibly) the more reliable trading 
+signal that the late-informed traders could act upon, given that the predictive sign of the opening 
+half-hour returns varies under alternative measures. Finally, it should be noted that from the 
+practical perspective, the stronger the “overnight moment um”, the more trading opportunities 
+left for traders as they would have more time to execute trades during the continuous trading 
+sessions. Therefore, in the remaining part of th is paper, we present the results for both the first 
+half-hour return and the overnight return. 
+ 
+5. Intraday Momentum and Informational Shocks 
+To shed more light on the (possible) link between intraday momentum and late-informed 
+trading, we verify whether there exists a dynamic  intraday time-series predictability. For 
+example, Hong  et al.  (2000)  find negative firm-specific information diffuses gradually across 
+the investing public, leading to a stronger momentum pattern for loser stocks. To the extent 
+that intraday high-frequency momentum reflects the tendency that late-informed traders 
+commence trading based on the observed price signal, the informational role of the first half-
+hour return (or the overnight return) might differ between good and bad information being 
+disclosed to the market. Our logic is as follows. As long as managers prefer higher to lower 
+stock prices, they will have the strong tendency to disclose positive news about the firm more 
+efficiently (and possibly in a more unambiguous manner). Therefore, following the disclosure 
+===== PAGE 16 =====
+13 
+ of positive news, the informational role of first half-hour return (or overnight return) will 
+become weaker ( i.e., a smaller post-event  intraday momentum effect) as there is less 
+informational uncertainty about the firm. On the contrary, managers would not have the same 
+motivation to disclose the negative news about the firms to the public. Even if the managerial 
+disclosure of negative news is in the same unbiased manner as for positive news, it might still 
+take longer time for the investing public to digest the informational content of the negative 
+news due to the impediment of short-sales constraints ( Hong  et al.  2000 ). Based on these 
+arguments, the intraday momentum effect might be stronger following negative news about the 
+firm. To sum up, our main testable hypotheses on the dynamic intraday momentum effect are: 
+Hypothesis 1a . Following the disclosure of positive information, the intraday time-series 
+predictability gets weaker than that of a normal day.  
+Hypothesis 1b . Following the disclosure of negative information, the intraday time-series 
+predictability gets stronger than that of a normal day.  
+To verify the dynamic role of intraday momentum following informational disclosure, we rely 
+on observed price jumps as the proxy for the ex post  large informational shocks to the individual 
+stocks. Jumps in asset price have long been considered as (unexpected) informational shocks 
+(see Ball and Torous (1985) , Johannes (2004) , Maheu and McCurdy (2004) , and Cremers  et al.  
+(2015)  for theoretical justification).  Jiang and Zhu (2017)  also use price jumps as proxy of 
+price-relevant informational arrivals and find a strong short-term momentum pattern at daily 
+and weekly frequency. Therefore, we use intraday 5-minute returns and adopt the recursive 
+intraday jump detection method based on Andersen  et al.  (2012)  to identify positive and 
+negative jump days. A positive (negative) jump day is defined as the date that has a positive 
+(negative) jump return if there is only one intraday price jump during that day. In case there 
+are more than one jump within the day, we calculate the (daily) cumulative jump return and 
+define it as a positive (negative) jump day if the cumulative jump return is above (below) zero 
+for that day. To save space, a full walk-through of the jump identification method is available 
+in Appendix A.2 .  
+ [ insert table 5 here ] 
+Table 5  provides the summary statistics of the cumulative jump returns on positive and 
+negative jump days respectively. For comparison purpose, we also present the corresponding 
+statistics for all sample days. We adopt the same criteria as in prior sections by restricting to 
+stocks with at least one-year available data ( i.e., 244 trading days) in the analysis. The 
+===== PAGE 17 =====
+14 
+ cumulative jump returns on positive jump days have an average value of 2.13% and a standard 
+deviation of 1.59%. Similarly, the cumulative jump returns on negative jump days have an 
+average value of -2.09% and a standard deviation of 1.55%. In comparison, the average daily 
+return over the sample period is only 0.04%. Therefore, we confirm that price jumps in our 
+sample represent substantial price movement within the day and may indicates valuable price-
+related information flows to the stock market. Looking across the 5%, 25%, 50%, 75%, and 
+95% quantile values, the cumulative jump returns on positive jump days ranges from 0.52% to 
+5.17%, while the corresponding statistics on negative jump days ranges from -5.55% to -0.55%. 
+It seems that price jumps on positive jump days and negative jump days have analogous 
+characteristics ( i.e., the magnitude of the price jumps), except in different directions ( i.e., the 
+sign of the jump return). The only notable difference is that there are slightly more positive 
+jump days than negative jump days during our sample period, as the ratio of the number of 
+positive jump days to the total trading days is 14.09% compared to 10.73% for the ratio of 
+negative jump days.  
+Empirically, we study the interaction between price jumps and intraday momentum via the 
+following model specifications.  
+𝑟𝑙𝑎𝑠𝑡,𝑡 = 𝛼 + 𝛽 1𝑠𝑡× 𝑟 1𝑠𝑡,𝑡+ 𝛽 𝑃𝐽× 𝑃𝐽 × 𝑟 1𝑠𝑡,𝑡+ 𝛽 𝑁𝐽×𝑁𝐽× 𝑟 1𝑠𝑡,𝑡
++ 𝛽 14:30× 𝑟 14:30,𝑡+𝐹𝐸+ 𝜀 𝑡 
+and 
+𝑟𝑙𝑎𝑠𝑡,𝑡 = 𝛼 + 𝛽 𝑜𝑣× 𝑟 𝑜𝑣,𝑡+ 𝛽 𝑃𝐽× 𝑃𝐽 × 𝑟 𝑜𝑣,𝑡+ 𝛽 𝑁𝐽×𝑁𝐽× 𝑟 𝑜𝑣,𝑡
++ 𝛽 14:30× 𝑟 14:30,𝑡+𝐹𝐸+ 𝜀 𝑡 [5.1] 
+ 
+[5.2] 
+where 𝑟𝑙𝑎𝑠𝑡,𝑡 , 𝑟1𝑠𝑡,𝑡, 𝑟𝑜𝑣,𝑡, 𝑟14:30,𝑡, and 𝐹𝐸 are defined similarly as in table 1 and 2. 𝑃𝐽 (𝑁𝐽) is 
+the positive (negative) post-jump-day dummy which equals one if the prior  trading day is 
+detected as a positive (negative) jump day. It should be noted that the above two equations 
+retain the same predictive flavor as before, because we are using the information set that is 
+available before the last half-hour trading period at day 𝑡. The slope coefficients on the 
+interaction terms 𝑃𝐽 × 𝑟 1𝑠𝑡,𝑡 (𝑃𝐽 × 𝑟 𝑜𝑣,𝑡) and 𝑁𝐽× 𝑟 1𝑠𝑡,𝑡 (𝑁𝐽× 𝑟 𝑜𝑣,𝑡) capture the incremental 
+effect on intraday (overnight) momentum subsequent to the positive and negative jump days.  
+[ insert table 6 here ] 
+Table 6  presents the estimation results for the dynamic intraday momentum effect. The first 
+two columns use the overnight returns to interact with the post-jump-day dummies with and 
+===== PAGE 18 =====
+15 
+ without the penultimate half-hour return as the control variable in the model. Given that 
+substantial favourable or detrimental information about the firm is revealed to the market (as 
+manifested by the jump dummies), we document a striking asymmetric post-jump intraday 
+momentum pattern: Following a positive jump day, the intraday momentum pattern over the 
+next day is weakened as the slope coefficient on the interaction term is strongly negative with 
+a value of -2.28 that is significantly at the 1% level. The total intraday momentum effect 
+subsequent to a positive jump day is thus only 0.62 ( 2.88− 2. 28), indicating a much weaker 
+time-series predictability after positive information disclosure to the market. In a sharp contrast, 
+however, subsequent to a negative jump day, the intraday momentum effect is strengthened 
+greatly as the slope coefficient on the interaction term amounts to 2. 53 which is highly 
+significant at the 1% level. Thus, the total intraday momentum effect following negative jump 
+days is approximately 5.41 ( 2.88+ 2. 53), implying a much stronger intraday predictability 
+subsequent to a negative jump day than a normal day (with no price jumps). These dynamic 
+patterns remain unchanged when we control the effect of return autocorrelation by including 
+the penultimate half-hour returns in the regression model (column 2).  
+The next two columns in table 6  list the results when we use the first half-hour return as the 
+predicting variable in the regression. As it stands, we find a similar asymmetric pattern that 
+subsequent to a positive jump day, the intraday momentum is much weaker than following a 
+normal trading day. In comparison, subsequent to a negative jump day, the overnight 
+momentum effect intensified dramatically as compared to a normal trading day.  
+[ insert table 7 here ] 
+Table 7 provides further evidence on the asymmetric pattern of the post-jump intraday 
+momentum effect. We generate alternative positive and negative post-jump dummies, which 
+have the value of one for the one-day, two-day, and three-day event window following a 
+positive or negative jump day. Therefore, the slope coefficients on the interaction term 
+𝑃𝐽 × 𝑟 1𝑠𝑡,𝑡 (𝑃𝐽 × 𝑟 𝑜𝑣,𝑡) and 𝑁𝐽× 𝑟 1𝑠𝑡,𝑡 (𝑁𝐽× 𝑟 𝑜𝑣,𝑡) capture the incremental effect on intraday 
+(overnight) momentum averaged  over these different post-jump event window. As expected, 
+the averaged incremental effect due to the positive or negative informational shocks weakens 
+over the longer event window, suggesting that the market has gradually incorporated the new 
+price-relevant information over time. In other words, the intraday momentum effect gradually 
+reverts back to its normal level subsequent to a positive or negative jump day. 
+===== PAGE 19 =====
+16 
+ The above striking asymmetric pattern over the one-, two-, and three-day post-jump event 
+window lends strong support to our testable hypotheses ( Hypothesis  1a and 1b) that the 
+intraday momentum effect is stronger following negative news about the firm. It is quite similar 
+to the (cross-sectional) momentum pattern documented in Hong  et al.  (2000)  who posit that 
+bad news travels slowly in the financial market, and therefore, the cross-sectional momentum 
+pattern is more pronounced after pessimistic information revealed to the market. Other studies 
+have also found that market participants react differently to positive information and negative 
+information ( Pritamani & Singal 2001 ; Jiang  et al.  2011 ; Park & Lee 2014 ; Brennan  et al.  
+2015 ). Our evidence provides more direct support along this line, as it is more of the time-
+series nature for one single asset. In other words, the asymmetric reaction to negative news 
+exists for individual stocks, as it takes longer time for investors to digest the informational 
+content of bad news, which leads to a more salient intraday time-series predictability.  
+ 
+6. Individual Investor Account and Late-Informed Trading  
+In principle, the intraday momentum could be attributed to both the ( Bogousslavsky 2016 ) 
+model of infrequent portfolio rebalancing and the Gao et al.  (2018)  model of late-informed 
+trading near the market close. As is explained in the introduction section, China adopts a unique 
+“𝑇 + 1  trading rule ”, which prevents investors from selling stocks bought on the same day. 
+This unique trading rule, however, goes counter to the settings of the infrequent portfolio 
+rebalancing model, as traders who hold an excess position in the asset could not rebalance at 
+the intraday frequency. The “ 𝑇 + 1  trading rule ” also preclude s the rebalancing trading due to  
+aversion of overnight risk in Elaut  et al.  (2018) , as those who purchase the asset could not sell 
+on the same day. In other words, the 𝑇 + 1  trading rule offers an ideal setting to empirically 
+verify the (rich) predictions of the model of late-informed trading as suggested in Gao et al.  
+(2018) .  
+Within the model of late-informed trading, investors are heterogeneous in their ability to collect 
+and interpret information. Those who have better skills to process the overnight information 
+can act early in the morning trading session and even the pre-open call auction. However, for 
+those who have less ability to process the overnight information or those who hesitate to trade 
+until they confirm the precision of the overnight information, the last half-hour trading period 
+stands for another important timing for them to utilize their (late-learned) information to trade, 
+===== PAGE 20 =====
+17 
+ and thus exploiting the informational content. Based on these arguments, our main testable 
+hypothesis on the late-informed trading is: 
+Hypothesis 2 . Late-informed traders are relatively less experienced or skilful compared to 
+those who trade mainly in the pre-open call auction and/or the early trading session.  
+To empirically validate the above hypothesis of the late-informed trading model, we rely on a 
+proprietary investor account dataset obtained from a large brokerage firm in China.10 This 
+unique dataset contains all the trading records in November 2014 for the members of individual 
+investors that hold a brokerage account with the firm. We are aware that there are several 
+limitations regarding our investor account data. First, the sampling period only spans for one 
+month ( i.e., November 2014). Second, it does not include institutional investors’ trading 
+activity. However, the bottom line is that analysing the investor account data provides us direct 
+evidence on the late-informed trading model which otherwise would not be testable.   
+Panel A of Table 8  provides average trading behaviour of different investor types. During the 
+20 trading days in November 2014, there are totalling 120,608 active investors who have traded 
+at least once during the sampling period. Among those active traders, only 7,896 investors have 
+actually traded during the pre-open call auction, and we classify these active investors as early-
+informed  trader s. The relatively small number of early-informed traders is consistent with the 
+relatively small transaction volume in the pre-open call auction. 11 
+In comparison, we find that there are 18,281 individual investors who have never  traded during 
+the pre-open call auction and the opening half-hour trading period ( i.e., 9:30 to 10:00). We 
+classify these investors as late-informed investors, which is consistent with the definitions in 
+the late-informed trading model. These late-informed traders forfeit the trading opportunity in 
+the pre-open call auction session and also the opening half-hour trading session when the 
+trading volume is the largest within the day. Interestingly, the number of investors who only 
+trade after 10:00 is more than two times that who traded in the pre-open call auction, reinforces 
+the importance of the late-informed trading in the Chinese stock market.  
+ 
+10 The brokerage firm is a listed firm in China that provides a comprehensiv e securities-related services, including 
+securities brokerage, investment consulting, financial advisory related to securities trading, and securities 
+investment activities for investors, and it is rated as an A-class brokerage firm by  China Securities Regulatory 
+Commission (CSRC) in 2018. 
+11 However, this ex post  measure is probably an understatement as we only observe those who “successfully” 
+transacted during the pre-open call market. We cannot rule out the possib ility that some more investors could have 
+submitted limit orders during the pre-open call auction, but not get those orders  transacted. 
+===== PAGE 21 =====
+18 
+ When we partition the number of trades within the day into subperiods, we again find strong 
+systematic difference across the two investor groups ( Panel A ). Early-informed traders not 
+only participate the pre-open call auction, they also concentrate their trades within the first half-
+hour continuous trading session, as 26.32% of their trades occurred between 9:30 and 10:00, 
+while only 11.15% of their trades occurred in the last half-hour of day. Late-informed traders 
+behaves differently: They not only forfeit the trading opportunity in the pre-open call auction 
+and the first half-hour continuous trading session, but also concentrate their trades in the last 
+half-hour trading session ( i.e., 32.33%). More generally, more than 70% of their trades happen 
+in the afternoon session ( i.e., after 13:00).   
+To shed more light on the investor trading behaviour, we then compare the personal 
+characteristics of all active traders, the early-informed traders, and the late-informed traders in 
+Panel B of Table 8 . It seems that early-informed traders are more likely to be experienced ones 
+(defined as investors who have at least 10-year trading experience), as their proportion is 
+47.92%. In comparison, the late-informed traders tend to be relatively inexperienced, as the 
+proportion of having at least 10-trading experience is only 38.58%. When compared with the 
+proportion of experienced investors in all active investors, it is clear that early-informed (late-
+informed) traders are more likely to be experienced (inexperienced) ones as demonstrated by 
+the two-sample 𝑡-test with the total sample ( i.e., all active investors).  
+Similarly, 20.71% of the early-informed traders are better educated, as compared to 18.49% in 
+the late-informed group. The two-sample 𝑡-tests demonstrate that early-informed traders tend 
+to have stronger educational background as compared to all active traders, while there is no 
+systematic difference between late-informed traders and all active traders. Calvet  et al.  (2009)  
+use households’ educational background as a proxy of financial sophistication, and established 
+an inverse relation with “financial mistakes”. In that s ense, we have good reasons to believe 
+that early-informed (late-informed) traders are relatively more (less) sophisticated or skilled.  
+Other investor characteristics also reveal that early-informed traders are more likely to be male 
+traders (47.09%) than late-informed traders (34. 70%). Another systematic difference is that 
+early-informed traders tend to have relatively high risk tolerance than late-informed traders.12  
+For robustness, we also perform logit regression to explain the probability of being an early-
+informed (late-informed) trader with the personal characteristics in Table 8 . The coefficients 
+ 
+12 Risk tolerance is measured through the required questionnaire when openin g a client account with the brokerage 
+firm.   
+===== PAGE 22 =====
+19 
+ on trading experience, educational background (bachelor degree or higher) all have the 
+expected signs and are highly significant at the 1% level (See Table A4  in appendix).  
+Overall, based on the unique investor-account data, we are able to uncover a number of 
+interesting empirical patterns :  
+First, there exists a substantial fraction of late-informed traders ( i.e., approximately 15% of all 
+active traders) who concentrated their trading activity in the latt er-half of the trading day, and 
+in particular, the last half-hour of the continuous trading session.  
+Second, compared to early-informed traders, late-informed traders tend to be less experienced 
+or sikllful ( i.e., relatively less well-educated), which is consistent with the conjecture of the 
+late-informed trading hypothesis ( Hypothesis 2 ).  
+Overall, these salient features of investor heterogeneity in China are consistent with the 
+predictions of the late-informed trading model that late-informed traders rely on the overnight 
+returns or first half-hour returns, as one of the informational sources, to decide on the trading 
+directions before the market closure.  
+ 
+7. Robustness and Further Analyses 
+7.1. Firm- by-firm Evidence of Intraday Momentum using the First Half-hour Return  
+In this subsection, we re-test the intraday return predictability of the first half-hour return based 
+on firm-by-firm time-series regressions (see equation [3.1] ). That is, we perform time-series 
+regression for each individual firm in our dataset and report the aggregated firm-lever results.  
+Table A2.  presents the aggregated firm-level evidence for the full sample and the three 
+subsamples. When controlling for the effect of return autocorrelation ( i.e., the penultimate half-
+hour return), the average value of the slope coefficient on the first half-hour return is 1.87 and 
+the median value is slightly higher with 1.93. In addition, the average Newey West 𝑡-statistics 
+amounts to 1.58, which is statistically significant at the 10% level (based on the null hypothesis 
+of the one-sided 𝑡-test that the slope coefficient is larger than zero). Among the 3,224 firms, 
+more than 90% of the firms have a positive slope coefficient on the first half-hour return. 
+Moreover, the slope coefficients that are statistically significant at the 1%, 5%, and 10% level 
+are more than 38%, 48%, and 60%, respectively, indicating strong intraday momentum effect 
+===== PAGE 23 =====
+20 
+ at the firm level. 13 We find similar patterns for the short-term return autocorrelation ( i.e., the 
+penultimate half-hour return) with the individual firms.  
+Table A2.  also presents the aggregated firm-level evidence of the three subgroups ( i.e., Main, 
+SME, and ChiNext). After controlling the penultimate half-hour returns, we, again, document 
+a strong intraday time-series predictability of the first half-hour return across the three 
+subgroups. When examining the proportion of significant slope coefficients of the first half-
+hour return, there seems no discernible difference across the three subgroups. The only 
+noticeable difference lies in the average explanatory power of the predictive model, which 
+increases monotonically from 0.90% to 1.41% and to 1.65% for the Main, SME, and ChiNext 
+board, respectively.  
+ 
+7.2. Firm- by-firm Evidence of Intraday Momentum using the Overnight Return  
+In this subsection, we re-perform the firm-by- firm time-series regressions to verify the intraday 
+time-series predictability using the overnight return as the key predictor. Table A3.  presents 
+the aggregated firm-level evidence. As it stands, the overnight return remains a strong return 
+predictor at the intraday frequency. When we control for the effect of the penultimate half- hour 
+return, the overnight return still has a significant positive influence on the last half-hour return, 
+as the average and median of the slope coefficient on overnight return amount to 2.81 and 2.78, 
+respectively. Moreover, the average Newey West 𝑡-statistic is 1.78 (significant at the 5% level) 
+and is higher than that of the penultimate half-hour return. More importantly, more than 92% 
+of the listed firms have a positive slope coefficient on the overnight return, higher than that of 
+the first half-hour return in Table A2 . The slope coefficients on overnight return that are 
+statistically significant at the 1%, 5%, and 10% level are more than 45%, 55%, and 67%, 
+respectively.14 This is consistent with the evidence in section 4  that the intraday momentum 
+effect stems mainly from its overnight return component. In fact, comparing the magnitude of 
+the corresponding slope coefficients (or adjusted R-square) in tables A.2. and A.3. , it seems 
+ 
+13 To be specific, the null hypothesis of intraday momentum is the slope coef ficient of the first half-hour return is 
+larger than zero. Therefore, we use the one-sided 𝑡 test to determine the significant level of each coefficient.  >
+0 ∗, > 0 ∗∗ , and > 0 ∗∗∗  denote that the Newey West 𝑡-statistic is above 1.28, 1.645, and 1.96, respectively ( i.e., 
+the 10%, 5%, and 1% significance level). 
+14 In unreported analysis, we find that little return predictability of the openin g half-hour return. In fact, the average 
+Newey  West 𝑡-statistic of the opening half-hour return is only 0.39, indicating that the retu rn component from 
+9:30 to 10:00 offer little, if any, predictive power for the last half-hou r return within the day. The percentage of 
+firms that have significantly positive coefficient on the term 𝑟10:00,𝑡 amount to around 8%, 13%, and 21% at the 
+1%, 5%, and 10% level, much lower than those of overnight return and penultima te half-hour return.  
+===== PAGE 24 =====
+21 
+ that the overnight return component is more powerful in predicting the last half-hour return 
+than the first half-hour return that includes the remaining return component from 9:30 to 10:00.  
+Table A3  also presents the aggregated firm-level evidence for overnight returns across the 
+three subgroups. Again we find a robust pattern that the overnight component is the main driver 
+of the intraday time-series predictor after controlling the penultimate half-hour returns. In 
+general the overnight component has stronger predictability than its predecessor, the first half-
+hour return that contains the opening half-hour return component. The average explanatory 
+power of the predictive model is in general larger than its counterpart with the first half-hour 
+return, except for the case of ChiNext.  
+ 
+7.3. Further Analyses  
+We also perform two additional analyses to better understand the features of intraday 
+momentum in China.15  
+First, we test the dynamic relation between intraday predictability and financial crises. Over 
+the entire sample period, there are two notable crises which earn their names in the Chinese 
+financial history. Namely, the 2007-2008 global financial crisis and the more recent 2015-2016 
+Chinese “stock disaster”. Gao et al.  (2018)  and Elaut  et al.  (2018)  both find that the intraday 
+momentum effect strengthens during the financial crisis, which is reflected by the increasing 
+magnitude of the slope coefficient and the explanatory power of the predicting model. To test 
+the above notion, we generate a crisis dummy, denoted as 𝐹𝐶, to test its interaction with the 
+first half-hour return or the overnight return in predicting the last half-hour returns during the 
+trading day. The crisis dummy equals one for the sample date ranges from 16 October 2007 to 
+18 September 2008 and from 12 Jun 2015 to 29 February 2016, and zero otherwise. The 
+empirical results are similar to prior findings in Gao et al.  (2018)  and Elaut  et al.  (2018)  that 
+intraday momentum is more pronounced when market is in stressful states with increased return 
+commonality. The total intraday momentum during crisis periods ( i.e., the sum of the slope 
+coefficient of the first half-hour return/overnight return and the slope coefficient on the 
+interaction term) is more than doubled as compared to that on the normal days. Overall, we 
+find strong evidence that the intraday (overnight) time-series momentum is much more 
+intensified when the stock market crashes.   
+ 
+15 The empirical results on the further analyses are consolidated in the Internet Append ix.   
+===== PAGE 25 =====
+22 
+ Second, we examine the time trend of intraday momentum. Gao et al.  (2018)  observe an 
+upward trend indicating that the intraday time-series predictability is more pronounced in 
+recent years in the US. We replicate the same rolling window exercise to test whether a similar 
+time trend exists in the Chinese stock market. Based on trailing ten-year regressions, we find 
+similar evidence that the predictive power of the first half-hour return or overnight return is 
+getting stronger in more recent sample periods than earlier sample periods. 
+ 
+8. Conclusion  
+Based on a comprehensive high-frequency firm-level dataset that spans from 1996 to 2018, we 
+re-test the intraday momentum pattern in the Chinese stock market, the largest emerging 
+financial market. Our paper provides a number of new insights which extend the growing 
+literature on intraday time-series momentum.  
+First, we provide compelling evidence that intraday time-series momentum exists at the firm 
+level in the Chinese A-share market. The first half-hour return is a strong positive predictor for 
+intraday return near market close ( i.e., the last half-hour return).  
+Second, by partitioning the first half-hour return into its overnight component and the opening 
+half-hour component, we find that the intraday momentum effect stems mainly from its 
+overnight return component. This is consistent with the microstructure design in China that 
+overnight information is incorporated via trading in the pre-open call auction. In comparison, 
+the opening half-hour return is a much weaker price signal, as it probably incorporates multiple 
+trading motives (such as informational driven, liquidity driven, and risk aversion). From a 
+practical perspective, the overnight return is a more reliable return predictor than its 
+predecessor, the first half-hour return.  
+Third, we document a strong asymmetric pattern, as the return predictability of the first half-
+hour or the overnight return is much stronger subsequent to days with negative jumps than with 
+positive jumps. The striking asymmetric post-jump momentum pattern could be reconciled 
+with a number of real-world mechanisms ( i.e., frictions) such as biased managerial disclosure 
+of good news versus bad news and the existence of stringent short-sales impediments. In other 
+words, bad news travels slowly as indicated by stronger intraday momentum following large 
+pessimist informational shocks.  
+Finally, we provide confirmatory evidence that there exists a substantial fraction of late-
+informed traders ( i.e., approximately 15% of all active traders) who concentrated their trading 
+===== PAGE 26 =====
+23 
+ activity in the latter-half of the trading day, and in particular, near market closure. Consistent 
+with the predictions of late-informed trading model, late-informed traders have relatively less 
+trading experience and educational background than those who tend to trade in the pre-open 
+call market ( i.e., early-informed traders). Therefore, the last half-hour trading period stands for 
+an important timing for those late-informed to utilize their (late-learned) information. 
+ 
+  
+===== PAGE 27 =====
+24 
+ Table 1. Intraday momentum with the first half-hour return 
+The table presents the estimation results of the panel regressions with fixed effects. The 
+dependent variable is the last half-hour return of the trading day. 𝑟1𝑠𝑡,𝑡 denotes the first half-
+hour return calculated using the closing price of the prior trading day and the stock price at 
+10:00 of the current trading day, 𝑟14:30,𝑡 denotes the penultimate half-hour return calculated 
+using the stock prices at 14:00 and 14:30 of the current trading day, 𝛼 denotes the intercept 
+term in the regression, 𝑅2 denotes the adjusted R-squared, 𝑂𝑏𝑠.  denotes the number of 
+observations in each regression, and 𝐹𝑖𝑟𝑚𝑠  denotes the number of firms in the regression. The 
+standard error of each coefficient is reported in parenthesis. All values reported are in 
+percentages except for 𝑂𝑏𝑠.  and 𝐹𝑖𝑟𝑚𝑠. Significance at the 1%, 5%, and 10% level is denoted 
+as ***, **, and *, respectively.  
+ (1) (2) (3) 
+𝑟1𝑠𝑡,𝑡  1.921***  1.832*** 
+(0.0167)  (0.0167) 
+𝑟14:30,𝑡  6.163*** 6.022*** 
+ (0.0366) (0.0366) 
+𝛼 0.0339*** 0.0324*** 0.0335*** 
+(0.0003) (0.0003) (0.0003) 
+𝑅2 0.16 0.37 0.51 
+𝑂𝑏𝑠.  7,787,027 7,787,027 7,787,027 
+𝐹𝑖𝑟𝑚𝑠  3,224 3,224 3,224 
+ 
+ 
+ 
+===== PAGE 28 =====
+25 
+ Table 2: Subsample analysis of intraday momentum with the first-half hour return 
+The table presents the estimation results of the panel regressions with fixed effects. The dependent variable is the last half-hour return of the trading 
+day. Main board includes all A-shares listed in the Shanghai Stock Exchange and those in the main board of the Shenzhen Stock Exchange . SME 
+board includes all A-shares listed in the SME board of the Shenzhen Stock Exchange. ChiNext includes all A-shares li sted in the ChiNext board 
+of the Shenzhen Stock Exchange. 𝑟1𝑠𝑡,𝑡 denotes the first half-hour return calculated using the closing price of the prior trading day and the stock 
+price at 10:00 of the current trading day, 𝑟14:30,𝑡 denotes the penultimate half-hour return calculated using the stock prices at 14:00 and 14:30 of 
+the current trading day, 𝛼 denotes the intercept term in the regression, 𝑅2 denotes the adjusted R-squared, 𝑂𝑏𝑠.  denotes the number of observations 
+in each regression, and 𝐹𝑖𝑟𝑚𝑠  denotes the number of firms in the regression. The standard error of each coefficient is reported in parenthesis. All 
+values reported are in percentages except for 𝑂𝑏𝑠.  and 𝐹𝑖𝑟𝑚𝑠. Significance at the 1%, 5%, and 10% level is denoted as ***, **, and *, respectively. 
+ Main SME ChiNext 
+ (1) (2) (3) (1) (2) (3) (1) (2) (3) 
+𝑟1𝑠𝑡,𝑡  1.73***  1.65*** 2.27***  2.14*** 2.35***  2.20*** 
+(0.0205)  (0.0205) (0.037)  (0.037) (0.047)  (0.047) 
+𝑟14:30,𝑡  5.41*** 5.30***  7.55*** 7.36***  8.63*** 8.40*** 
+ (0.0436) (0.0436)  (0.082) (0.082)  (0.117) (0.117) 
+𝛼 0.0469*** 0.0453*** 0.0465*** 0.0096*** 0.0079*** 0.0093*** -0.0169*** -0.0154*** -0.0158*** 
+(0.0003) (0.0003) (0.0003) (0.0007) (0.0007) (0.0007) (0.0011) (0.0011) (0.0011) 
+𝑅2 0.12 0.28 0.39 0.24 0.57 0.78 0.31 0.76 1.03 
+𝑂𝑏𝑠.  5,563,999 5,563,999 5,563,999 1,503,005 1,503,005 1,503,005 720,023 720,023 720,023 
+𝐹𝑖𝑟𝑚𝑠  1,738 1,738 1,738 852 852 852 634 634 634 
+ 
+ 
+===== PAGE 29 =====
+26 
+ Table 3. Overnight component versus the opening half-hour component 
+The table presents the estimation results of the panel regressions with fixed effects. The 
+dependent variable is the last half-hour return of the trading day. 𝑟𝑜𝑣,𝑡 denotes the overnight 
+return calculated using the close price of the prior trading day and the opening price at 9:30 of 
+the current trading day, 𝑟10:00,𝑡 denotes the opening half-hour return calculated using the stock 
+prices at 9:30 and 10:00 of the current trading day, 𝑟14:30,𝑡 denotes th e penultimate half-hour 
+return calculated using the stock prices at 14:00 and 14:30 of the current trading day, 𝛼 denotes 
+the intercept term in the regression, 𝑅2 denotes the adjusted R-squared, 𝑂𝑏𝑠.  denotes the 
+number of observations in each regression, and 𝐹𝑖𝑟𝑚𝑠  denotes the number of firms in the 
+regression. The standard error of each coefficient is reported in parenthesis. All values reported 
+are in percentages except for 𝑂𝑏𝑠.  and 𝐹𝑖𝑟𝑚𝑠. Significance at the 1%, 5%, and 10% level is 
+denoted as ***, **, and *, respectively.  
+ (1) (2) (3) (4) 
+𝑟𝑜𝑣,𝑡 2.881*** 2.922*** 2.780*** 2.812*** 
+(0.0216) (0.0217) (0.0216) (0.0216) 
+𝑟10:00,𝑡  0.641***  0.566*** 
+ (0.0243)  (0.0243) 
+𝑟14:30,𝑡   6.021*** 6.012*** 
+  (0.0365) (0.0365) 
+𝛼 0.036*** 0.035*** 0.035*** 0.035*** 
+(0.0003) (0.0003) (0.0003) (0.0003) 
+𝑅2 0.22 0.23 0.57 0.58 
+𝑂𝑏𝑠.  7,787,027 7,787,027 7,787,027 7,787,027 
+𝐹𝑖𝑟𝑚𝑠  3,224 3,224 3,224 3,224 
+ 
+ 
+  
+===== PAGE 30 =====
+27 
+ Table 4. Overnight return versus alternative opening returns 
+The table presents the estimation results of the panel regressions with fixed effects. The 
+dependent variable is the last half-hour return of the trading day. 𝑟𝑜𝑣,𝑡 denotes the overnight 
+return calculated using the close price of the prior trading day and the opening price at 9:30 of 
+the current trading day. The alternative versions of the opening returns are 𝑟9:35,𝑡, 𝑟9:40,𝑡, 𝑟9:45,𝑡, 
+𝑟9:50,𝑡, 𝑟9:55,𝑡, and 𝑟10:00,𝑡, which are the intraday returns calculated using the opening price and 
+the stock prices at 9:35, 9:40, 9:45, 9:50, 9:55, and 10:00 of the trading day, respectively. 
+𝑟14:30,𝑡 denotes the penultimate half-hour return calculated using the stock prices at 14:00 and 
+14:30 of the current trading day, 𝛼 denotes the intercept term in the regression, 𝑅2 denotes the 
+adjusted R-squared, 𝑂𝑏𝑠.  denotes the number of observations in each regression, and 𝐹𝑖𝑟𝑚𝑠  
+denotes the number of firms in the regression. The standard error of each coefficient is reported 
+in parenthesis. All values reported are in percentages except for 𝑂𝑏𝑠.  and 𝐹𝑖𝑟𝑚𝑠. Significance 
+at the 1%, 5%, and 10% level is denoted as ***, **, and *, respectively.  
+ (1) (2) (3) (4) (5) (6) 
+𝑟𝑜𝑣,𝑡 2.78*** 2.78*** 2.79*** 2.79*** 2.79*** 2.81*** 
+(0.0216) (0.0216) (0.0216) (0.0216) (0.0216) (0.0216) 
+𝑟9:35,𝑡 -0.077*      
+(0.0424)      
+𝑟9:40,𝑡  -0.058*     
+ (0.0336)     
+𝑟9:45,𝑡   0.300***    
+  (0.0297)    
+𝑟9:50,𝑡    0.421***   
+   (0.0273)   
+𝑟9:55,𝑡     0.387***  
+    (0.0254)  
+𝑟10:00,𝑡      0.566*** 
+     (0.0243) 
+𝑟14:30,𝑡 6.02*** 6.02*** 6.02*** 6.02*** 6.02*** 6.01*** 
+(0.0365) (0.0365) (0.0365) (0.0365) (0.0365) (0.0365) 
+𝛼 0.0352*** 0.0352*** 0.0352*** 0.0351*** 0.0351*** 0.0351*** 
+(0.0003) (0.0003) (0.0003) (0.0003) (0.0003) (0.0003) 
+𝑅2 0.57 0.57 0.57 0.57 0.57 0.58 
+𝑂𝑏𝑠.  7,787,027 7,787,027 7,787,027 7,787,027 7,787,027 7,787,027 
+𝐹𝑖𝑟𝑚𝑠  3,224 3,224 3,224 3,224 3,224 3,224 
+ 
+  
+===== PAGE 31 =====
+28 
+ Table 5. Summary statistics about jump days 
+The table presents the summary statistics of the cumulative daily positive jump return ( 𝑅𝐸𝑇𝑃𝐽), 
+cumulative daily negative jump return ( 𝑅𝐸𝑇𝑁𝐽) and cumulative daily return ( 𝑅𝐸𝑇 ). It reports 
+the mean and standard deviation of the variables, and their values at the 5%, 25%, 50%, 75%, 
+and 95% quantiles. Ratio denotes the ratio of the number of days with positive jumps / negative 
+jumps to the total trading days.  
+ Mean Std. 5% 25% 50% 75% 95% Ratio 
+𝑅𝐸𝑇𝑃𝐽 2.133 1.590 0.521  1.091  1.682  2.627  5.167  14.089%  
+𝑅𝐸𝑇𝑁𝐽 -2.094 1.550 -5.548  -2.691  -1.659  -1.078  -0.549  10.731%  
+𝑅𝐸𝑇  0.044 3.160 -5.231 -1.511 0.076 1.575 5.336 --- 
+ 
+ 
+  
+===== PAGE 32 =====
+29 
+ Table 6. Intraday momentum and price jumps 
+The table presents the estimation results of the panel regressions with fixed effects. The 
+dependent variable is the last half-hour return of the trading day. 𝑟1𝑠𝑡,𝑡 denotes the first half-
+hour return, calculated using the closing price of the prior trading day and the stock price at 
+10:00 of the current trading day, 𝑟𝑜𝑣,𝑡 denotes the overnight return calculated using the close 
+price of the prior trading day and the opening price at 9:30 of the current trading day, 𝑟14:30,𝑡 
+denotes the penultimate half-hour return, calculated from the stock prices from 14.00 to 14.30 
+of the current trading day. 𝑃𝐽 and 𝑁𝐽 are dummy variables, which equal 1 if the prior trading 
+day is detected as a positive and a negative jump day, respectively. 𝛼 denotes the intercept term 
+in the regression, 𝑅2 denotes the adjusted R-squared, 𝑂𝑏𝑠.  denotes the number of observations 
+in each regression, and 𝐹𝑖𝑟𝑚𝑠  denotes the number of firms in the regression. The standard 
+error of each coefficient is reported in parenthesis. All values reported are in percentages exce pt 
+for 𝑂𝑏𝑠.  and 𝐹𝑖𝑟𝑚𝑠. Significance at the 1%, 5%, and 10% level is denoted as ***, **, and *, 
+respectively.  
+ Overnight return First half-hour return 
+ (1) (2)  (1) (2) 
+𝑟1𝑠𝑡,𝑡    1.811*** 1.722*** 
+  (0.0214) (0.0214) 
+𝑟𝑜𝑣,𝑡  2.882*** 2.781***   
+(0.0292) (0.0292)   
+𝑃𝐽 × 𝑟 1𝑠𝑡,𝑡   -1.683*** -1.621*** 
+  (0.0430) (0.0430) 
+𝑃𝐽 × 𝑟 𝑜𝑣,𝑡 -2.284*** -2.182***   
+(0.0540) (0.0539)   
+𝑁𝐽× 𝑟 1𝑠𝑡,𝑡   2.642*** 2.522*** 
+  (0.0455) (0.0455) 
+𝑁𝐽× 𝑟 𝑜𝑣,𝑡 2.532*** 2.401***   
+(0.0551) (0.0550)   
+𝑟14:30,𝑡  5.973***  5.971*** 
+ (0.0365)  (0.0366) 
+𝛼 0.041*** 0.041*** 0.041*** 0.040*** 
+(0.0003) (0.0003) (0.0003) (0.0003) 
+𝑅2 0.30 0.65 0.26 0.60 
+𝑂𝑏𝑠.  7,787,027 7,787,027 7,787,027 7,787,027 
+𝐹𝑖𝑟𝑚𝑠  3,224 3,224 3,224 3,224 
+ 
+  
+===== PAGE 33 =====
+30 
+ Table 7. Post-jump Effect 
+The table presents the estimation results of the panel regressions with fixed effects. The 
+dependent variable is the last half-hour return of the trading day. 𝑟1𝑠𝑡,𝑡 denotes the first half-
+hour return, calculated using the closing price of the prior trading day and the stock price at 
+10:00 of the current trading day, 𝑟𝑜𝑣,𝑡 denotes the overnight return calculated using the close 
+price of the prior trading day and the opening price at 9:30 of the current trading day, 𝑟14:30,𝑡 
+denotes the penultimate half-hour return, calculated from the stock prices from 14.00 to 14.30 
+of the current trading day. 𝑃𝐽 and 𝑁𝐽 are the post-jump dummy which equals 1 over the one- , 
+two-, three-day event window subsequent to the positive and negative jump days, respectively. 
+𝛼 denotes the intercept term in the regression, 𝑅2 denotes the adjusted R-squared, 𝑂𝑏𝑠.  denotes 
+the number of observations in each regression, and 𝐹𝑖𝑟𝑚𝑠  denotes the number of firms in the 
+regression. The standard error of each coefficient is reported in parenthesis. All values reported 
+are in percentages except for 𝑂𝑏𝑠.  and 𝐹𝑖𝑟𝑚𝑠. Significance at the 1%, 5%, and 10% level is 
+denoted as ***, **, and *, respectively.  
+ Panel A: Overnight Return Panel B: First Half-hour Return 
+ One-day Two-day Three-day One-day Two-day Three-day 
+𝑟1𝑠𝑡,𝑡     1.72*** 1.62*** 1.47*** 
+   (0.0214) (0.0234) (0.0252) 
+𝑟𝑜𝑣,𝑡  2.78*** 2.51*** 2.38***    
+(0.0292) (0.0260) (0.0264)    
+𝑃𝐽 × 𝑟 1𝑠𝑡,𝑡    -1.62*** -1.09*** -0.66*** 
+   (0.0430) (0.0367) (0.0344) 
+𝑃𝐽 × 𝑟 𝑜𝑣,𝑡 -2.18*** -0.99*** -0.59***    
+(0.0539) (0.0334) (0.0304)    
+𝑁𝐽× 𝑟 1𝑠𝑡,𝑡    2.52*** 2.08*** 1.87*** 
+   (0.0455) (0.0386) (0.0357) 
+𝑁𝐽× 𝑟 𝑜𝑣,𝑡 2.40*** 2.09*** 1.86***    
+(0.0550) (0.0361) (0.0329)    
+𝑟14:30,𝑡 5.97*** 5.97*** 5.98*** 5.97*** 5.97*** 5.98*** 
+(0.0365) (0.0365) (0.0365) (0.0366) (0.0366) (0.0366) 
+𝛼 0.041*** 0.0392*** 0.0379*** 0.040*** 0.0378*** 0.0365*** 
+(0.0003) (0.0003) (0.0003) (0.0003) (0.0003) (0.0003) 
+𝑅2 0.65 0.64 0.62 0.60 0.58 0.56 
+𝑂𝑏𝑠.  7,787,027 7,787,027 7,787,027 7,787,027 7,787,027 7,787,027 
+𝐹𝑖𝑟𝑚𝑠  3,224 3,224 3,224 3,224 3,224 3,224 
+ 
+ 
+  
+===== PAGE 34 =====
+31 
+ Table 8. Individual Investor Accounts and Trading Activities, November 2014 
+The table reports the individual investor accounts by types. All investors denote all the 
+individual investors who have traded during the sample month ; Early-informed refers to the 
+individual investors who have traded in the pre-open call auction; Late-informed refers to the 
+individual investors who have never traded in the pre-open call auction and the opening half-
+hour during the morning session. Panel A reports, for each investor type, the number of 
+investors, number of stocks traded, number of total trades, and the ratio of the number of trades 
+within each trading period and the total number of trades averaged across days. Panel B reports 
+the characteristics of the different investor types. Two-sample 𝑡-statistics are reported in 
+parenthesis. Significance at the 1%, 5%, and 10% level is denoted as ***, **, and *, 
+respectively. 
+Panel A. Proportion of the Number of Trades  
+ All Investors Early-informed  Late-informed  
+Number of investors 120,608 7,896 18,281 
+Number of stocks traded 2,411 2,409  2,397 
+Number of trades 2,890,937 576,715 127,685 
+Proportion of trades (%)    
+Pre-open call 0.56 2.81 -- 
+>09:30 & <=10:00 21.90 26.32 -- 
+>10:00 & <=10:30 14.11 13.95 10.13 
+>10:30 & <=11:00 10.70 10.17 9.71 
+>11:00 & <=11:30 8.42 8.02 8.57 
+>13:00 & <=13:30 10.15 9.55 11.91 
+>13:30 & <=14:00 10.04 8.99 12.67 
+>14:00 & <=14:30 10.42 9.04 14.68 
+>14:30 & <=15:00 13.71 11.15 32.33 
+Total 100 100 100 
+Panel B. Characteristics by Investor Types 
+ All Investors Early-informed  Late-informed  
+Proportion with trading 
+experience > 10 years 41.59%  47.92%  38.58%  
+  6.34%*** 
+(11.06) -3.01%*** 
+(-7.70) 
+Proportion with Bachelor 
+degree or above 18.64%  20.71 %  18.49 %  
+  2.06%*** 
+(4.47) -0.15% 
+(-0.50) 
+Proportion of male  
+investors 38.98 %  47.09 %  34.70 %  
+  8.11%*** 
+(14.14) -4.28%*** 
+(-11.20) 
+Proportion with high-risk 
+tolerance 20.95% 27.96% 17.79% 
+  7.01%*** 
+(14.08) -3.16%*** 
+(-10.08) 
+ 
+  
+===== PAGE 35 =====
+32 
+ Appendix  
+A.1. Variables Definition  
+Variables  Description  
+𝑟𝑙𝑎𝑠𝑡 The last half-hour return calculated using the stock prices at 14:30 and 15:00 
+(i.e., market close) of the current trading day.  
+𝑟1𝑠𝑡 The first half-hour return calculated using the close price of the prior trading day 
+and the stock price at 10:00 of the current trading day.  
+𝑟14:30 The penultimate half-hour return calculated using the stock prices at 14:00 and 
+14:30 of the current trading day. 
+𝑟𝑜𝑣 The overnight return calculated using the close price of the prior trading day and 
+the opening price at 9:30 of the current trading day ( i.e., close- to-open).  
+𝑟10:00 The opening half-hour return calculated using the stock prices at 9:30 and 10:00 
+of the current trading day, excluding overnight returns.  
+𝑃𝐽 Positive jump dummy that equals 1 if the prior trading day is a positive jump 
+day. 
+𝑁𝐽 Negative jump dummy that equals 1 if the prior trading day is a negative jump 
+day. 
+𝐹𝐶 Financial crises dummy that equals 1 if the date ranges from 16th October 2007 
+to 18th September 2008 or from 12th June 2015 to 29th February 2016.  
+𝐹𝐶1 Crisis dummy that equals 1 if the date ranges from 16th October 2007 to 18th 
+September 2008.  
+𝐹𝐶 2 Crisis dummy that equals 1 if the date ranges from 12th June 2015 to 29th 
+February 2016. 
+ 
+ 
+  
+===== PAGE 36 =====
+33 
+ A.2. Jump Detection Method 
+We assume a jump-diffusion process for the underlying (logarithmic) price, 𝑝𝑡, which is of the 
+following form:  
+𝑑𝑝𝑡= 𝜇 𝑡𝑑𝑡 + 𝜎 𝑡𝑑𝑊 𝑡+ 𝑑𝐽 𝑡 
+where 𝜇𝑡 is the drift, 𝜎𝑡 the diffusion parameter, 𝑊𝑡 the Brownian motion, and Jt the jump 
+process at time 𝑡. Given the dynamics of the underlying process, Barndorff-Nielsen and 
+Shephard (2004 , 2006)  states theoretically that the quadratic variation ( 𝑄𝑉) for the price 
+process can be decomposed into a continuous volatility component, known as integrated 
+variance ( 𝐼𝑉), and a jump component. In finite samples, the quadratic variation is usually 
+approximated by the realized variance ( 𝑅𝑉), a non-parametric measure. For the sample 
+counterparty of the integrated variance, we follow the suggestions in Andersen et al. (2012)  by 
+adopting the 𝑀𝑒𝑑𝑅𝑉  measure, which provides better finite sample robustness (in the case of 
+stale prices) and asymptotic efficiency than any Multi-power variation ( 𝑀𝑃𝑉 ) measures (such 
+as bipower variation). Following Andersen et al. (2012) , the two non-parametric measures, 𝑅𝑉 
+and 𝑀𝑒𝑑𝑅𝑉 , are computed as follows:   
+𝑅𝑉≡ ∑ 𝑟𝑗2𝑀
+𝑗=1 
+𝑀𝑒𝑑𝑅𝑉 ≡𝜋
+6 − 4 √3+ 𝜋(𝑀
+𝑀 − 2)∑ 𝑚𝑒𝑑(|𝑟 𝑗|, |𝑟 𝑗−1|, |𝑟 𝑗−2|)2𝑀
+𝑗=3 
+where 𝑟𝑗 is the 𝑗𝑡ℎ intraday return and M the total number of intraday return intervals within a 
+single day. For brevity, we have omitted the subscript for the daily indexation.   
+Based on the quadratic variation theory ( Barndorff-Nielsen & Shephard 2004 , 2006 ), the 
+difference between 𝑅𝑉 and 𝑀𝑒𝑑𝑅𝑉  provides a consistent estimation of the jump component 
+as M tends to infinity.16 To detect the trading days with significant jump(s), we rely on the ratio 
+test statistics ( Z) based on its good finite sample property ( Huang & Tauchen 2005 ):  
+𝑍 = 𝑀1
+2[𝑅𝑉− 𝑀𝑒𝑑𝑅𝑉 ]× 𝑅𝑉−1
+[(𝜇1−4+ 2𝜇1−2− 5) × 𝑚𝑎𝑥 {1, 𝑀𝑒𝑑𝑅𝑄 × 𝑀𝑒𝑑𝑅𝑉−2}]1
+2 
+ 
+with the estimator of the higher-order quarticity, 𝑀𝑒𝑑𝑅𝑄 , defined as  
+𝑀𝑒𝑑𝑅𝑄 ≡3𝜋𝑀
+9𝜋 + 72−52√3(𝑀
+𝑀 − 2)∑ 𝑚𝑒𝑑(|𝑟 𝑗|, |𝑟 𝑗−1|, |𝑟 𝑗−2|)4𝑀
+𝑗=3 
+In practice, the test needs to be implemented for certain stringent significant levels in order to 
+avoid the detection of spurious jumps. Following the literature, we set the significant level to 
+α = 0.01% ( Beine  et al.  2007 ; Evans 2011 ; Bajgrowicz  et al.  2015 ). Throughout the paper, we 
+adopt the 5-min sampling frequency to alleviate the potential influence of market 
+microstructure frictions, which might bias the measures of RV and 𝑀𝑒𝑑𝑅𝑉 . 
+ 
+The Recursive Intraday Jump Detection Scheme  
+ 
+16 For the mathematical proof, see theorem 2 in Barndorff-Nielsen and Shephard (2004) .  
+===== PAGE 37 =====
+34 
+ When the null hypothesis that there is no jump (within a day) is rejected based on the ratio test 
+statistic, we apply a sequential intraday jump detection scheme to identify the intraday jumps 
+and their timing within the day. That is, if the ratio statistic ( 𝑍) is significant at day 𝑖, we first 
+assume that only one intraday return contributes to the significant 𝑍-stat and then proceed as 
+follows: 
+Step 1:  We record the significant ratio statistic 𝑍𝑖 and extract the series of the 𝑀 intraday 
+(geometric) returns {𝑟𝑖,1, 𝑟𝑖,2, . . . , 𝑟 𝑖,𝑀} within day 𝑖.  
+Step 2:  For each intraday return 𝑟𝑖,𝑗 ( 𝑗 = 1,2, … , 𝑀  ) at day 𝑖, we generate a modified 
+series {𝑟𝑖,1, 𝑟𝑖,2, . . . , 𝑟 𝑖,𝑚𝑒𝑑𝑖𝑎𝑛 , . . . , 𝑟 𝑖,𝑀} by replacing the 𝑗𝑡ℎ element with the median of the 
+intraday returns (denoted as 𝑟𝑖,𝑚𝑒𝑑𝑖𝑎𝑛 ) in day 𝑖, while keeping the rest unchanged. We then 
+recalculate the corresponding 𝑍 -stat (denoted as 𝑍𝑖(𝐽)) for the 𝑀 “new” intraday return series 
+to obtain a “sample” of M revised Z-stats {𝑍𝑖(1), 𝑍𝑖(2), … , 𝑍𝑖(𝑀)} for day 𝑖.   
+Step 3:  We calculate the differences between the original 𝑍-stat and (each of) the new 𝑍-
+statistics {𝑍𝑖− 𝑍𝑖(1), 𝑍𝑖− 𝑍𝑖(2), … , 𝑍 𝑖− 𝑍𝑖(𝑀)}. The significant jump return 𝑟𝑖,𝐽 is identified 
+when the following mathematical expression achieves its maximum.  
+𝐼{𝑍𝑖>Φ 1−𝛼 }(max
+𝐽∈{1,2,…,𝑀 }𝑍𝑖− 𝑍𝑖(𝐽)) 
+Step 4:  We retain the revised 𝑍-stat ( 𝑍𝑖(𝐽)) identified in Step 3. If 𝑍𝑖(𝐽) is less than the pre-
+set critical value, we conclude that there is only one jump on day 𝑖. However, if it still exceeds 
+the critical value, we then replace the identified jump observation with 𝑟𝑖,𝑚𝑒𝑑𝑖𝑎𝑛 , and start over 
+again from Step 1 to Step 4 to identify the second intraday jump on day 𝑖. 
+The above recursive procedure continues until all the intraday jumps within day 𝑖 are identified. 
+In this way, we are able to extract all the intraday jumps during the sample period. Similar 
+sequential jump detection methods are also used in Andersen  et al.  (2010) , Jiang and Oomen 
+(2008)  and Jiang  et al.  (2011) . The major difference between their procedure and ours is that 
+we rely on the 𝑀𝑒𝑑𝑅𝑉  measure for the jump tests, while they use bipower variation or other 
+alternatives to approximate the integrated variance in finite sample. To ensure that the 
+identified jump returns are not spurious due to bid-ask bounces, we follow the additional 
+procedure of Jiang and Zhu (2017)  by filtering out the jump returns which are less than twice 
+the tick size.    
+ 
+ 
+ 
+===== PAGE 38 =====
+35 
+ Table A1. Summary Statistics of the Chinese A-Share Market 
+The table provides the breakdown of the summary statistics of the Chinese A-shares. Main board includes all A-shares listed in the Shanghai Stock 
+Exchange and A-shares in the Main board of the Shenzhen Stock Exchange. SME board includes all A-share s listed in the SME board of the 
+Shenzhen Stock Exchange. ChiNext includes all A-shares listed in the ChiNext board of the Shenzhen Stock Excha nge. Total market capitalization 
+is measured in billions of Chinese yuan, total number of shares outstanding is measured in billions, and total trading volume is measured in 100 
+millions of Chinese yuan.  
+ Number of Stocks Market Cap. ( ×109) Shares Outstanding ( ×109) Trading Volume  ( ×108) 
+ Main SME ChiNext Main SME ChiNext Main SME ChiNext Main SME ChiNext 
+2004 1311 38  2.74 1.09  1.43 0.25  4.28 1.56  
+2005 1305 50  2.40 0.96  1.66 0.44  4.86 2.61  
+2006 1296 102  6.64 1.98  2.51 0.54  11.97 2.91  
+2007 1305 202  24.06 5.27  3.56 0.63  26.72 4.04  
+2008 1308 273  8.74 2.30  4.99 0.95  17.37 4.36  
+2009 1315 327 36 17.01 5.16 4.47 10.38 1.16 0.18 35.99 10.04 1.07 
+2010 1357 531 153 15.43 3.04 1.31 13.66 1.33 0.33 27.52 7.64 2.62 
+2011 1393 646 281 12.36 2.22 0.89 15.13 1.74 0.51 21.00 5.77 2.71 
+2012 1416 701 355 13.06 2.32 0.94 16.18 2.12 0.68 18.45 7.24 4.16 
+2013 1412 701 355 12.66 3.64 2.32 19.39 2.93 1.21 25.97 11.76 8.55 
+2014 1454 732 406 19.83 4.92 3.22 19.89 3.49 1.69 39.78 15.46 9.94 
+2015 1540 776 492 23.05 8.99 6.52 20.94 4.51 2.38 87.79 32.74 20.20 
+2016 1642 822 570 20.80 7.80 5.36 21.22 5.43 2.98 39.22 25.03 16.68 
+2017 1854 903 710 21.35 7.88 4.30 19.95 6.18 3.08 33.66 19.28 12.44 
+ 
+  
+===== PAGE 39 =====
+36 
+ Table A2. Individual stock regression with first half-hour returns 
+The table presents the aggregated results of the firm-by-firm time-series regression with Newey-West adjusted standard errors. All denotes all the 
+stocks, Main denotes all A-shares listed in the Shanghai Stock Exchange and in the Main board of the Shenzhe n Stock Exchange, SME denotes 
+all A-shares listed in the SME board of the Shenzhen Stock Exchange, and ChiNext all A-shares listed in the ChiNext board of the Shenzhen Stock 
+Exchange. The dependent variable is the last half-hour return of the trading day. 𝑟1𝑠𝑡,𝑡 denotes the first half-hour return calculated using the close 
+price of the prior trading day and the stock price at 10:00 of the current trading day, 𝑟14:30,𝑡 denotes the penultimate half-hour return calculated 
+using the stock prices at 14:00 and 14:30 of the current trading day. Mean (Median) denotes the average (median) value of the coefficients (scaled 
+by 100) aggregated from individual stock regressions. 𝑡-stat. reports th e mean value of the Newey West adjusted 𝑡-statistics from individual stock 
+regression. > 0 denotes the percentage of positive coefficients. > 0 ∗ ,  > 0 ∗∗ , and  > 0 ∗∗∗  denote the percentage of positive coefficients that are 
+significant at the 10%, 5%, and 1% level, respectively. 𝑅2 denotes the adjusted R-squared, and 𝐹𝑖𝑟𝑚𝑠  denotes the number of firms in the regression.  
+ 
+ All Main SME ChiNext 
+ 𝛼  𝑟1𝑠𝑡,𝑡 𝑟14:30,𝑡 𝛼 𝑟1𝑠𝑡,𝑡 𝑟14:30,𝑡 𝛼 𝑟1𝑠𝑡,𝑡 𝑟14:30,𝑡 𝛼 𝑟1𝑠𝑡,𝑡 𝑟14:30,𝑡 
+Mean 0.01 1.87 6.70 0.04 1.70 5.75 -0.01 2.06 7.25 -0.03 2.09 8.44 
+Median 0.02 1.93 6.60 0.04 1.75 5.73 0.00 2.17 7.67 -0.03 2.17 8.42 
+𝑡-stat. 1.32 1.58 1.70 2.59 1.55 1.74 0.19 1.59 1.66 -0.82 1.61 1.57 
+> 0 63.40 90.42 89.73 79.06 90.16 88.55 51.48 90.34 89.46 32.65 90.69 91.32 
+> 0 ∗  46.12 60.86 63.93 64.38 59.26 63.81 29.86 61.58 63.34 15.30 63.25 61.83 
+> 0 ∗∗  42.15 48.88 53.44 60.53 47.70 54.72 25.03 49.18 52.47 12.62 50.00 48.11 
+> 0 ∗∗∗  38.83 38.52 43.98 57.42 38.09 46.61 21.41 38.31 42.15 9.46 38.33 36.75 
+𝑅2 1.13   0.90   1.41   1.65   
+𝐹𝑖𝑟𝑚𝑠  3,224   1,738   911   634   
+ 
+  
+===== PAGE 40 =====
+37 
+ Table A3. Individual stock regression with overnight returns 
+The table presents the aggregated results of the firm-by-firm time-series regression with Newey-West adjusted standard errors. All denotes all the 
+stocks, Main denotes all A-shares listed in the Shanghai Stock Exchange and in the Main board of the Shenzhe n Stock Exchange, SME denotes 
+all A-shares listed in the SME board of the Shenzhen Stock Exchange, and ChiNext all A-shares listed in the ChiNext board of the Shenzhen Stock 
+Exchange. The dependent variable is the last half-hour return of the trading day. 𝑟𝑜𝑣,𝑡 denotes the overnight return calculated using the close price 
+of the prior trading day and the opening price at 9:30 of the current trading day, 𝑟14:30,𝑡 denotes the penultimate half-hour return calculated using 
+the stock prices at 14:00 and 14:30 of the current trading day. Mean (Median) denotes the average (median) value of the coefficients (scaled by 
+100) aggregated from individual stock regressions. 𝑡-stat. reports the mean value of the Newey West adjusted 𝑡-statistics from individual stock 
+regression. > 0 denotes the percentage of positive coefficients. > 0 ∗ ,  > 0 ∗∗ , and  > 0 ∗∗∗  denote the percentage of positive coefficients that are 
+significant at the 10%, 5%, and 1% level, respectively. 𝑅2 denotes the adjusted R-squared, and 𝐹𝑖𝑟𝑚𝑠  denotes the number of firms in the regression.  
+ 
+ All Main SME ChiNext 
+ 𝛼 𝑟𝑜𝑣,𝑡 𝑟14:30,𝑡 𝛼 𝑟𝑜𝑣,𝑡 𝑟14:30,𝑡 𝛼 𝑟𝑜𝑣,𝑡 𝑟14:30,𝑡 𝛼 𝑟𝑜𝑣,𝑡 𝑟14:30,𝑡 
+Mean 0.02 2.81 6.70 0.04 2.66 5.75 0.00 3.10 7.25 -0.03 2.78 8.44 
+Median 0.02 2.78 6.59 0.04 2.64 5.74 0.01 3.13 7.69 -0.03 2.68 8.43 
+𝑡-stat. 1.43 1.78 1.72 2.70 1.87 1.75 0.30 1.77 1.68 -0.73 1.54 1.58 
+> 0 64.80 92.21 89.76 80.15 92.29 88.49 53.57 92.86 89.68 33.75 90.69 91.32 
+> 0 ∗  47.83 66.87 64.05 65.48 68.58 63.92 32.27 66.74 63.23 17.51 61.36 62.30 
+> 0 ∗∗  43.61 55.27 53.82 61.91 58.29 55.29 26.89 54.34 52.47 13.56 46.53 48.42 
+> 0 ∗∗∗  40.17 45.13 44.54 58.98 47.64 47.12 22.39 45.12 42.81 10.57 35.80 37.22 
+𝑅2 1.18   0.96   1.47   1.64   
+𝐹𝑖𝑟𝑚𝑠  3,224   1,738   911   634   
+ 
+ 
+===== PAGE 41 =====
+38 
+ Table A4. Logit Regression Model 
+The table reports the logit regression model. The dependent variable is the binary variable that 
+equals one if the trader is early-informed (late-informed) and zero otherwise. Experience 
+denotes whether the investor has trading experience of 10 years or longer, Degree denotes 
+whether the investor a bachelor degree or higher, Risk Tolerance denotes whether the investor 
+is with high risk tolerance or not, and Male denotes whether the investor is male or not. The 
+standard error of each coefficient is reported in parenthesis. 𝑂𝑏𝑠.  denotes the number of 
+observations. Significance at the 1%, 5%, and 10% level is denoted as ***, **, and *, 
+respectively. 
+ 
+ 𝑃(𝑒𝑎𝑟𝑙𝑦 − 𝑖𝑛𝑓𝑜𝑟𝑚𝑒𝑑 = 1)  𝑃(𝑙𝑎𝑡𝑒 − 𝑖𝑛𝑓𝑜𝑟𝑚𝑒𝑑 = 1)  
+𝐸𝑥𝑝𝑒𝑟𝑖𝑒𝑛𝑐𝑒  0.222*** -0.117*** 
+(0.0237) (0.0166) 
+𝐷𝑒𝑔𝑟𝑒𝑒  0.335*** -0.107*** 
+(0.0313) (0.0218) 
+𝑅𝑖𝑠𝑘 𝑇𝑜𝑙𝑒𝑟𝑒𝑛𝑐𝑒  0.335*** -0.196*** 
+(0.0265) (0.0210) 
+𝑀𝑎𝑙𝑒  0.399*** -0.217*** 
+(0.0255) (0.0178) 
+𝛼 -3.074*** -1.536*** 
+(0.0224) (0.0134) 
+𝑂𝑏𝑠.  120,608 120,608 
+ 
+ 
+ 
+  
+===== PAGE 42 =====
+39 
+ Reference 
+Andersen, T.G., Bollerslev, T., Frederiksen, P., Ørregaard Nielsen, M., 2010. Continuous-time 
+models, realized volatilities, and testable distributional implications for daily stock 
+returns. Journal of Applied Econometrics 25, 233-261 
+Andersen, T.G., Dobrev, D., Schaumburg, E., 2012. Jump-robust volatility estimation using 
+nearest neighbor truncation. Journal of Econometrics 169, 75-93 
+Asness, C.S., Moskowitz, T.J., Pedersen, L.H., 2013. Value and momentum everywhere. The 
+Journal of Finance 68, 929-985 
+Avramov, D., Hore, S., 2017. Cross-sectional factor dynamics and momentum returns. Journal 
+of Financial Markets 32, 69-96 
+Bajgrowicz, P., Scaillet, O., Treccani, A., 2015. Jumps in High-Frequency Data: Spurious 
+Detections, Dynamics, and News. Management Science 62, 2198-2217 
+Ball, C.A., Torous, W.N., 1985. On jumps in common stock prices and their impact on call 
+option pricing. The Journal of Finance 40, 155-173 
+Barndorff-Nielsen, O.E., Shephard, N., 2004. Power and Bipower Variation with Stochastic 
+Volatility and Jumps. Journal of Financial Econometrics 2, 1-37 
+Barndorff-Nielsen, O.E., Shephard, N., 2006. Econometrics of Testing for Jumps in Financial 
+Economics Using Bipower Variation. Journal of Financial Econometrics 4, 1-30 
+Barroso, P., Santa-Clara, P., 2015. Momentum has its moments. Journal of Financial 
+Economics 116, 111-120 
+Beine, M., Lahaye, J., Laurent, S., Neely, C.J., Palm, F.C., 2007. Central bank intervention and 
+exchange rate volatility, its continuous and jump components. International Journal of 
+Finance & Economics 12, 201 
+Bogousslavsky, V., 2016. Infrequent rebalancing, return autocorrelation, and seasonality. The 
+Journal of Finance 71, 2967-3006 
+Brennan, M.J., Huh, S.-W., Subrahmanyam, A., 2015. Asymmetric effects of informed trading 
+on the cost of equity capital. Management Science 62, 2460-2480 
+Calvet, L.E., Campbell, J.Y., Sodini, P., 2009. Measuring the Financial Sophistication of 
+Households. The American Economic Review 99, 393-398 
+Carhart, M.M., 1997. On Persistence in Mutual Fund Performance. The Journal of Finance 52, 
+57-82 
+Chui, A.C.W., Titman, S., Wei, K.C.J., 2010. Individualism and Momentum around the World. 
+The Journal of Finance 65, 361-392 
+Cooper, M.J., Gutierrez, R.C., Hameed, A., 2004. Market States and Momentum. The Journal 
+of Finance 59, 1345-1365 
+Cremers, M., Halling, M., Weinbaum, D., 2015. Aggregate jump and volatility risk in the 
+cross‐section of stock returns. The Journal of Finance 70, 577-614 
+Economides, N., Schwartz, R.A., 1995. Electronic call market trading. Journal of Portfolio 
+Management 21, 10-18 
+Elaut, G., Frömmel, M., Lampaert, K., 2018. Intraday momentum in FX markets: 
+Disentangling informed trading from liquidity provision. Journal of Financial Markets 
+37, 35-51 
+Evans, K.P., 2011. Intraday jumps and US macroeconomic news announcements. Journal of 
+Banking & Finance 35, 2511-2527 
+Fama, E.F., French, K.R., 2012. Size, value, and momentum in international stock returns. 
+Journal of Financial Economics 105, 457-472 
+Gao, L., Han, Y., Li, S.Z., Zhou, G., 2018. Market intraday momentum. Journal of Financial 
+Economics 129, 394-414 
+===== PAGE 43 =====
+40 
+ Georgopoulou, A., Wang, J., 2016. The Trend Is Your Friend: Time-Series Momentum 
+Strategies across Equity and Commodity Markets. Review of Finance 21, 1557-1592 
+Gerace, D., Liu, Q., Tian, G.G., Zheng, W., 2015. Call auction transparency and market 
+liquidity: Evidence from China. International Review of Finance 15, 223-255 
+Guo, M., Li, Z., Tu, Z., 2012. A unique “T+1 trading rule” in Chi na: Theory and evidence. 
+Journal of Banking & Finance 36, 575-583 
+Han, X., Li, Y., 2017. Can investor sentiment be a momentum time-series predictor? Evidence 
+from China. Journal of Empirical Finance 42, 212-239 
+Heston, S.L., Korajczyk, R.A., Sadka, R., 2010. Intraday patterns in the cross ‐section of stock 
+returns. The Journal of Finance 65, 1369-1407 
+Hong, H., Lim, T., Stein, J.C., 2000. Bad news travels slowly: Size, analyst coverage, and the 
+profitability of momentum strategies. The Journal of Finance 55, 265-295 
+Huang, X., Tauchen, G., 2005. The Relative Contribution of Jumps to Total Price Variance. 
+Journal of Financial Econometrics 3, 456-499 
+Jegadeesh, N., Titman, S., 1993. Returns to buying winners and selling losers: Implications for 
+stock market efficiency. The Journal of Finance 48, 65-91 
+Jiang, G.J., Lo, I., Verdelhan, A., 2011. Information Shocks, Liquidity Shocks, Jumps, and 
+Price Discovery: Evidence from the US Treasury Market. Journal of Financial and 
+Quantitative Analysis 46, 527-551 
+Jiang, G.J., Oomen, R.C.A., 2008. Testing for jumps when asset prices are observed with 
+noise –a “swap variance” approach. Journal of Econometrics 144, 352 -370 
+Jiang, G.J., Zhu, K.X., 2017. Information Shocks and Short-Term Market Underreaction. 
+Journal of Financial Economics 124, 43-64 
+Johannes, M., 2004. The statistical and economic role of jumps in continuous ‐time interest 
+rate models. The Journal of Finance 59, 227-260 
+Madhavan, A., 1992. Trading Mechanisms in Securities Markets. The Journal of Finance 47, 
+607-641 
+Maheu, J.M., McCurdy, T.H., 2004. News Arrival, Jump Dynamics, and Volatility 
+Components for Individual Stock Returns. The Journal of Finance 59, 755-793 
+Menkhoff, L., Sarno, L., Schmeling, M., Schrimpf, A., 2012. Currency momentum strategies. 
+Journal of Financial Economics 106, 660-684 
+Min, B.-K., Kim, T.S., 2016. Momentum and downside risk. Journal of Banking & Finance 72, 
+S104-S118 
+Moskowitz, T.J., Ooi, Y.H., Pedersen, L.H., 2012. Time series momentum. Journal of Financial 
+Economics 104, 228-250 
+Nijman, T., Swinkels, L., Verbeek, M., 2004. Do countries or industries explain momentum in 
+Europe? Journal of Empirical Finance 11, 461-481 
+Novy-Marx, R., 2012. Is momentum really momentum? Journal of Financial Economics 103, 
+429-453 
+Park, T.-J., Lee, Y., 2014. Informed trading before positive vs. negative earnings surprises. 
+Journal of Banking & Finance 49, 228-241 
+Pritamani, M., Singal, V., 2001. Return predictability following large price changes and 
+information releases. Journal of Banking & Finance 25, 631-656 
+Renault, T., 2017. Intraday online investor sentiment and return patterns in the US stock market. 
+Journal of Banking & Finance 84, 25-40 
+Rouwenhorst, K.G., 1998. International momentum strategies. The Journal of Finance 53, 267-
+284 
+Sagi, J.S., Seasholes, M.S., 2007. Firm-specific attributes and the cross-section of momentum. 
+Journal of Financial Economics 84, 389-434 
+===== PAGE 44 =====
+41 
+ Yamamoto, R., 2012. Intraday technical analysis of individual stocks on the Tokyo Stock 
+Exchange. Journal of Banking & Finance 36, 3033-3047 
+Zhang, Y., Ma, F., Zhu, B., 2019. Intraday momentum and stock return predictability: Evidence 
+from China. Economic Modelling 76, 319-329 
+ 
